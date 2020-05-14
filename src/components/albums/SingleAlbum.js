@@ -1,7 +1,7 @@
 import React from "react";
 import { FaItunes, FaSpotify, FaAmazon } from "react-icons/fa";
 
-const Album = (props) => {
+const SingleAlbum = (props) => {
   const {
     albumTitle,
     albumImg,
@@ -85,4 +85,4 @@ const Album = (props) => {
   );
 };
 
-export default Album;
+export default SingleAlbum;

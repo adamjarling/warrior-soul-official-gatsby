@@ -1,5 +1,5 @@
 import React from "react";
-import Album from "./albums/Album";
+import Album from "./albums/SingleAlbum";
 import albumDrugsGod from "../images/album-drugs-god-new-republic.jpg";
 import albumLastDecade from "../images/album-last-decade-dead-century.jpg";
 import albumSalutations from "../images/album-salutations-ghetto-nation.jpg";
