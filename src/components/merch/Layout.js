@@ -99,7 +99,7 @@ const MerchLayout = () => {
               <h3 className="title is-3">Ass Kickin Rockin Roll Tees</h3>
               <p>
                 (Silver print on black and white on black) - Clearance or Sale
-                item 15 euros plus 10 shipping
+                item 15 euros plus 15 shipping
               </p>
               <a
                 href="mailto:warriorsoulmgmt@gmail.com?subject=Order Ass Kickin T"
@@ -117,7 +117,7 @@ const MerchLayout = () => {
             </div>
             <div className="card-content">
               <h3 className="title is-3">Warrior Soul NEW Tour Shirt</h3>
-              <p> 20 Euros plus 10 shipping</p>
+              <p> 20 Euros plus 15 shipping</p>
               <a
                 href="mailto:warriorsoulmgmt@gmail.com?subject=New Tour T-Shirt"
                 className="button"
@@ -178,7 +178,7 @@ const MerchLayout = () => {
             <div className="card-content">
               <h3 className="title is-3">Rock N Roll Disease Tour Tees</h3>
               <p>
-                (Gold print on black) - Clearance or Sale item 15 euros plus 10
+                (Gold print on black) - Clearance or Sale item 15 euros plus 15
                 shipping
               </p>
               <a
