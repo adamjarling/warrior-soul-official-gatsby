@@ -5,6 +5,13 @@ import Img from "gatsby-image";
 const MerchLayout = () => {
   const data = useStaticQuery(graphql`
     query MerchLayoutQuery {
+      cocaine: file(relativePath: { eq: "cocaine-and-stuff.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1440) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
       rnr1: file(relativePath: { eq: "merch/RockNRollDiseaseViynl.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1440) {
@@ -75,6 +82,21 @@ const MerchLayout = () => {
       </h2>
       <div className="columns is-multiline content">
         <div className="column is-one-third">
+          <div className="card">
+            <div className="card-image">
+              <Img fluid={data.cocaine.childImageSharp.fluid} />
+            </div>
+            <div className="card-content">
+              <h3 className="title is-3">Cocaine and Other Good Stuff</h3>
+              <p>Coming soon!</p>
+              <a
+                href="mailto:warriorsoulmgmt@gmail.com?subject=Cocaine covers album pre-order"
+                className="button"
+              >
+                Pre-Order
+              </a>
+            </div>
+          </div>
           <div className="card">
             <div className="card-image">
               <Img fluid={data.rnr1.childImageSharp.fluid} />

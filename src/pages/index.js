@@ -24,7 +24,7 @@ const IndexPage = ({ data }) => {
       <Layout>
         <section className="hero is-fullheight has-background">
           <Img
-            fluid={data.heroImg.childImageSharp.fluid}
+            fluid={data.cocaine.childImageSharp.fluid}
             className="hero-background"
           />
           <div className="hero-body">
@@ -34,13 +34,13 @@ const IndexPage = ({ data }) => {
                   {/* <Img fluid={data.logo.childImageSharp.fluid} />} */}
                 </div>
               </div>
-              <h1 className="title is-uppercase">Rock 'N Roll Disease</h1>
-              <h2 className="subtitle"> Warrior Soul Official</h2>
+              <h1 className="title is-uppercase">
+                Cocaine and Other Good Stuff
+              </h1>
+              <h2 className="subtitle"> New covers album out soon</h2>
             </div>
           </div>
         </section>
-
-        <CovidAnnouncement showButton={true} />
 
         <section className="section">
           <div className="container">
@@ -165,6 +165,13 @@ export default IndexPage;
 export const pageQuery = graphql`
   query HomeQuery {
     albumImg: file(relativePath: { eq: "album-rnr-disease-gradient.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1440) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    cocaine: file(relativePath: { eq: "cocaine-and-stuff.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1440) {
           ...GatsbyImageSharpFluid
