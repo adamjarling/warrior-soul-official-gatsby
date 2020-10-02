@@ -4,6 +4,7 @@ import SEO from "../components/seo";
 import Albums from "../components/albums";
 import Img from "gatsby-image";
 import NewAlbumFeature from "../components/albums/new-album-feature";
+import { graphql } from "gatsby";
 
 const AlbumsPage = ({ data }) => (
   <div>

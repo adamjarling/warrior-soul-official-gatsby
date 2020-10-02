@@ -3,9 +3,9 @@ import { Link } from "gatsby";
 import SEO from "../components/seo";
 import Layout from "../components/layout";
 import Img from "gatsby-image";
-import CovidAnnouncement from "../components/covid-announcement";
 import ExternalLink from "../components/external-link";
 import MerchLayout from "../components/merch/Layout";
+import { graphql } from "gatsby";
 
 const IndexPage = ({ data }) => {
   console.log("IndexPage -> data", data);

@@ -4,6 +4,7 @@ import SEO from "../components/seo";
 import Img from "gatsby-image";
 import TourRowMediaObject from "../components/tour/TourRowMediaObject";
 import CovidAnnouncement from "../components/covid-announcement";
+import { graphql } from "gatsby";
 
 const TourDatesPage = ({ data }) => {
   const [dates, setDates] = useState([]);

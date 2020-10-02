@@ -1,4 +1,5 @@
 import React, { useState, useCallback } from "react";
+import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Gallery from "react-photo-gallery";
