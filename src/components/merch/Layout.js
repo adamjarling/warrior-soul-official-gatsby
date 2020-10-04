@@ -88,7 +88,9 @@ const MerchLayout = () => {
             </div>
             <div className="card-content">
               <h3 className="title is-3">Cocaine and Other Good Stuff</h3>
-              <p>Coming soon!</p>
+              <p>
+                For CD and T-Shirt pre-orders, email warriorsoulmgmt@gmail.com
+              </p>
               <a
                 href="mailto:warriorsoulmgmt@gmail.com?subject=Cocaine covers album pre-order"
                 className="button"
