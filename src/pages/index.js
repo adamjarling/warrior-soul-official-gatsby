@@ -6,6 +6,8 @@ import Img from "gatsby-image";
 import ExternalLink from "../components/external-link";
 import MerchLayout from "../components/merch/Layout";
 import { graphql } from "gatsby";
+import ReviewMelodyMan from "../components/albums/ReviewMelodyMan";
+import Video from "../components/videos/Video";
 
 const IndexPage = ({ data }) => {
   console.log("IndexPage -> data", data);
@@ -39,6 +41,32 @@ const IndexPage = ({ data }) => {
               </h1>
               <h2 className="subtitle"> New covers album out soon</h2>
             </div>
+          </div>
+        </section>
+
+        <section className="section">
+          <div className="container">
+            <h2 className="title">"Elected" Single Out Now</h2>
+            <p>
+              1st single off the new Warrior Soul album ‘Cocaine.. and other
+              good stuff’ out now! This rockin’ take on a stonecold Alice Cooper
+              classic will hopefully get yer’ ass shakin’ and electorial juices
+              flowing.
+            </p>
+            <div className="my-6">
+              <figure class="image is-16by9">
+                <iframe
+                  className="has-ratio"
+                  width="640"
+                  height="360"
+                  src="https://www.youtube.com/embed/LKJbu2fln_o"
+                  frameBorder="0"
+                  allowFullScreen
+                ></iframe>
+              </figure>
+            </div>
+
+            <ReviewMelodyMan />
           </div>
         </section>
 
