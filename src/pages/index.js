@@ -24,9 +24,9 @@ const IndexPage = ({ data }) => {
         ]}
       />
       <Layout>
-        <section className="hero is-fullheight has-background">
+      <section className="hero is-large has-background">
           <Img
-            fluid={data.cocaine.childImageSharp.fluid}
+            fluid={data.heroImg.childImageSharp.fluid}
             className="hero-background"
           />
           <div className="hero-body">
@@ -37,12 +37,37 @@ const IndexPage = ({ data }) => {
                 </div>
               </div>
               <h1 className="title is-uppercase">
-                Cocaine and Other Good Stuff
+                New album Fall 2021
               </h1>
-              <h2 className="subtitle"> New covers album out soon</h2>
+              <h2 className="subtitle">Coming soon...</h2>
+              <p>
+              Vocals/ Lyrics/ Arrangements:
+              Kory Clarke</p>
+              <p>
+                Guitars and Jams:
+                Dennis Post
+                Adam Arling
+                Full Throttle
+                John Hodgson
+              </p>
+              <p>
+                Drums:
+                Ivan Tambac
+                John Besser
+                Kory Clarke
+              </p>
+              <p>
+                Bass:
+                Christian Kimmett
+              </p>
+              <p>Producers : Kory Clarke/ Dennis Post</p>
+              <p>Mixed by: Rune</p>
+             
             </div>
           </div>
         </section>
+
+        
 
         <section className="section">
           <div className="container">
@@ -73,6 +98,32 @@ const IndexPage = ({ data }) => {
         <section className="section">
           <div className="container">
             <MerchLayout />
+          </div>
+        </section>
+
+        <section className="hero is-medium has-background">
+          <Img
+            fluid={data.cocaine.childImageSharp.fluid}
+            className="hero-background"
+          />
+          <div className="hero-body">
+            <div className="container">
+              <div className="columns is-centered">
+                <div className="column is-4 has-text-left">
+                  {/* <Img fluid={data.logo.childImageSharp.fluid} />} */}
+                </div>
+              </div>
+              <h2 className="title is-uppercase">
+                Cocaine and Other Good Stuff
+              </h2>
+              <h3 className="subtitle"> New covers album</h3>
+              <a
+                href="mailto:warriorsoulmgmt@gmail.com?subject=Cocaine covers album pre-order"
+                className="button"
+              >
+                Buy Now
+              </a>
+            </div>
           </div>
         </section>
 
@@ -183,6 +234,8 @@ const IndexPage = ({ data }) => {
             </div>
           </div>
         </section>
+
+        
       </Layout>
     </div>
   );

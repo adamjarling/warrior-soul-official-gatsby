@@ -95,7 +95,7 @@ const MerchLayout = () => {
                 href="mailto:warriorsoulmgmt@gmail.com?subject=Cocaine covers album pre-order"
                 className="button"
               >
-                Pre-Order
+                Buy Now
               </a>
             </div>
           </div>
