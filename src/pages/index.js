@@ -24,7 +24,7 @@ const IndexPage = ({ data }) => {
         ]}
       />
       <Layout>
-      <section className="hero is-large has-background">
+        <section className="hero is-large has-background">
           <Img
             fluid={data.heroImg.childImageSharp.fluid}
             className="hero-background"
@@ -36,47 +36,31 @@ const IndexPage = ({ data }) => {
                   {/* <Img fluid={data.logo.childImageSharp.fluid} />} */}
                 </div>
               </div>
-              <h1 className="title is-uppercase">
-                New album Fall 2021
-              </h1>
+              <h1 className="title is-uppercase">New album Fall 2021</h1>
               <h2 className="subtitle">Coming soon...</h2>
+              <p>Vocals/ Lyrics/ Arrangements: Kory Clarke</p>
               <p>
-              Vocals/ Lyrics/ Arrangements:
-              Kory Clarke</p>
-              <p>
-                Guitars and Jams:
-                Dennis Post
-                Adam Arling
-                Full Throttle
-                John Hodgson
+                Guitars and Jams: Dennis Post Adam Arling Full Throttle John
+                Hodgson
               </p>
-              <p>
-                Drums:
-                Ivan Tambac
-                John Besser
-                Kory Clarke
-              </p>
-              <p>
-                Bass:
-                Christian Kimmett
-              </p>
+              <p>Drums: Ivan Tambac John Besser Kory Clarke</p>
+              <p>Bass: Christian Kimmett</p>
               <p>Producers : Kory Clarke/ Dennis Post</p>
               <p>Mixed by: Rune</p>
-             
             </div>
           </div>
         </section>
 
-        
-
         <section className="section">
           <div className="container">
-            <h2 className="title">"Elected" Single Out Now</h2>
+            <h2 className="title">
+              "Cocaine... and Other Good Stuff" official videos!
+            </h2>
             <p>
-              1st single off the new Warrior Soul album ‘Cocaine.. and other
-              good stuff’ out now! This rockin’ take on a stonecold Alice Cooper
-              classic will hopefully get yer’ ass shakin’ and electorial juices
-              flowing.
+              The first 2 singles off the new Warrior Soul album ‘Cocaine.. and
+              other good stuff’ out now! These rockin’ takes on stone-cold Alice
+              Cooper and Van Halen classics will hopefully get yer’ ass shakin’
+              and politic juices flowing.
             </p>
             <div className="my-6">
               <figure class="image is-16by9">
@@ -84,7 +68,19 @@ const IndexPage = ({ data }) => {
                   className="has-ratio"
                   width="640"
                   height="360"
-                  src="https://www.youtube.com/embed/LKJbu2fln_o"
+                  src="https://www.youtube.com/embed/RmejvhvPUBg"
+                  frameBorder="0"
+                  allowFullScreen
+                ></iframe>
+              </figure>
+            </div>
+            <div className="my-6">
+              <figure class="image is-16by9">
+                <iframe
+                  className="has-ratio"
+                  width="640"
+                  height="360"
+                  src="https://www.youtube.com/embed/lcx0pzXt2GQ"
                   frameBorder="0"
                   allowFullScreen
                 ></iframe>
@@ -234,8 +230,6 @@ const IndexPage = ({ data }) => {
             </div>
           </div>
         </section>
-
-        
       </Layout>
     </div>
   );
