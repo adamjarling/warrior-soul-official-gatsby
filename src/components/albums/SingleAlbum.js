@@ -1,5 +1,7 @@
 import React from "react";
-import { FaItunes, FaSpotify, FaAmazon } from "react-icons/fa";
+import { FaItunes } from "@react-icons/all-files/fa/FaItunes";
+import { FaSpotify } from "@react-icons/all-files/fa/FaSpotify";
+import { FaAmazon } from "@react-icons/all-files/fa/FaAmazon";
 
 const SingleAlbum = (props) => {
   const {

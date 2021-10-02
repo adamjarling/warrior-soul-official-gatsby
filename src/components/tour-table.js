@@ -1,8 +1,8 @@
-import React from "react"
-import { FaFacebookSquare } from "react-icons/fa"
+import React from "react";
+import { FaFacebookSquare } from "@react-icons/all-files/fa/FaFacebookSquare";
 
-const DatesRow = props => {
-  const { date, venueUrl, venue, location, ticketUrl, fbUrl } = props
+const DatesRow = (props) => {
+  const { date, venueUrl, venue, location, ticketUrl, fbUrl } = props;
   return (
     <tr>
       <td>{date}</td>
@@ -37,11 +37,11 @@ const DatesRow = props => {
         )}
       </td>
     </tr>
-  )
-}
+  );
+};
 
-const TourTable = props => {
-  const { tourDates } = props
+const TourTable = (props) => {
+  const { tourDates } = props;
 
   return (
     <table className="table is-fullwidth is-size-4-desktop is-responsive is-hidden-touch">
@@ -68,7 +68,7 @@ const TourTable = props => {
         ))}
       </tbody>
     </table>
-  )
-}
+  );
+};
 
-export default TourTable
+export default TourTable;

@@ -3,6 +3,7 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Videos from "../components/videos";
 import Img from "gatsby-image";
+import { graphql } from "gatsby";
 
 const VideosPage = ({ data }) => (
   <div>
