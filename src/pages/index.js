@@ -52,7 +52,7 @@ const IndexPage = ({ data }) => {
 
         <section className="section">
           <div className="container">
-            <h2 className="title">New "Hero" Boxed Set Out Now</h2>
+            <h2 className="title">"Hero" Boxed Set Out Now</h2>
             <p>
               Sound City Records (Warrior Soul, Ted Nugent, The Sweet) has
               released a{" "}
@@ -65,6 +65,20 @@ const IndexPage = ({ data }) => {
               </a>
               .{" "}
             </p>
+
+            <h2 className="title pt-6">Kory is on Spotify</h2>
+            <p>
+              <a href="https://warriorsoulofficial.store/">Listen now!</a>
+            </p>
+
+            <h2 className="title pt-6">
+              'Out On Bail' Vinyl coming soon... On Green Splattered Vinyl !!!
+            </h2>
+
+            <h2 className="title pt-6">
+              *New For Collectors Of Vinyl* All Kory Clarke SOLO albums Box set
+              coming soon for the X-mas Holidaze!! 2022
+            </h2>
           </div>
         </section>
 
