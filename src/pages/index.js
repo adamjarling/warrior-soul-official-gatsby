@@ -24,26 +24,49 @@ const IndexPage = ({ data }) => {
         ]}
       />
       <Layout>
-        <section className="hero is-large has-background" style={{ minHeight: "80vh"}}>
+        <section
+          className="hero is-large has-background"
+          style={{ minHeight: "80vh" }}
+        >
           <Img
             fluid={data.outOnBail.childImageSharp.fluid}
             className="hero-background"
           />
-          
         </section>
         <section className="section">
           <div className="container">
-          <h2 className="title">NEW Warrior Soul Album Pre-Sale Pledge is still on but not for long!</h2>
-          <div className="content">
-
-          <p>Warrior Soul's New Record 'OUT ON BAIL' is going on for signed copies. Official release will be in November/December 2021.</p>
-          <p>For Info Contact: <a href="mailto:warriorsoulmgmt@gmail.com">warriorsoulmgmt@gmail.com</a> Thanks for your continued support...'And We Rock And Roll' 'F**k The Pigs'</p>
+            <h2 className="title">NEW Warrior Soul Album out now!</h2>
+            <div className="content">
+              <p>Warrior Soul's New Record 'OUT ON BAIL' is and on sale.</p>
+              <p>
+                For orders, contact:{" "}
+                <a href="mailto:warriorsoulmgmt@gmail.com">
+                  warriorsoulmgmt@gmail.com
+                </a>{" "}
+                Thanks for your continued support...'And We Rock And Roll' 'F**k
+                The Pigs'
+              </p>
+            </div>
           </div>
-          
+        </section>
 
-
+        <section className="section">
+          <div className="container">
+            <h2 className="title">New "Hero" Boxed Set Out Now</h2>
+            <p>
+              Sound City Records (Warrior Soul, Ted Nugent, The Sweet) has
+              released a{" "}
+              <a href="https://www.soundcitymusicgroup.com/products/ws-hero-bundle">
+                limited edition Warrior Soul Box Set
+              </a>
+              , commemorating "Hero". 200 copies.{" "}
+              <a href="https://www.soundcitymusicgroup.com/products/ws-hero-bundle">
+                Get yours today
+              </a>
+              .{" "}
+            </p>
           </div>
-          </section>
+        </section>
 
         <section className="section">
           <div className="container">
