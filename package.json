@@ -4,7 +4,6 @@
   "version": "1.5.2",
   "author": "Adam J. Arling <aarling@gmail.com>",
   "dependencies": {
-    "@react-icons/all-files": "^4.1.0",
     "bulma": "^0.9.4",
     "gatsby": "^5.0.1",
     "gatsby-image": "^3.11.0",
@@ -22,6 +21,7 @@
     "react-device-detect": "^2.2.2",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
+    "react-icons": "^4.6.0",
     "react-images": "^1.2.0-beta.7",
     "react-photo-gallery": "^8.0.0",
     "sass": "^1.56.1"

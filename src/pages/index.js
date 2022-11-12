@@ -5,9 +5,10 @@ import Layout from "../components/layout";
 import Img from "gatsby-image";
 import ExternalLink from "../components/external-link";
 import MerchLayout from "../components/merch/Layout";
-import { graphql } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
 import ReviewMelodyMan from "../components/albums/ReviewMelodyMan";
 import Video from "../components/videos/Video";
+import { graphql } from "gatsby";
 
 const IndexPage = ({ data }) => {
   console.log("IndexPage -> data", data);
@@ -52,33 +53,51 @@ const IndexPage = ({ data }) => {
 
         <section className="section">
           <div className="container">
-            <h2 className="title">"Hero" Boxed Set Out Now</h2>
-            <p>
-              Sound City Records (Warrior Soul, Ted Nugent, The Sweet) has
-              released a{" "}
-              <a href="https://www.soundcitymusicgroup.com/products/ws-hero-bundle">
-                limited edition Warrior Soul Box Set
-              </a>
-              , commemorating "Hero". 200 copies.{" "}
-              <a href="https://www.soundcitymusicgroup.com/products/ws-hero-bundle">
-                Get yours today
-              </a>
-              .{" "}
-            </p>
+            <div className="columns is-multiline">
+              <div className="column is-half-desktop">
+                <h2 className="title">"Hero" Boxed Set Out Now</h2>
+                <p>
+                  Sound City Records (Warrior Soul, Ted Nugent, The Sweet) has
+                  released a{" "}
+                  <a href="https://www.soundcitymusicgroup.com/products/ws-hero-bundle">
+                    limited edition Warrior Soul Box Set
+                  </a>
+                  , commemorating "Hero". 200 copies.{" "}
+                  <a href="https://www.soundcitymusicgroup.com/products/ws-hero-bundle">
+                    Get yours today
+                  </a>
+                  .{" "}
+                </p>
+              </div>
+              <div className="column is-half-desktop">
+                <h2 className="title">Listen to Warrior Soul on Spotify</h2>
+                <p>
+                  <a href="https://warriorsoulofficial.store/">Listen now!</a>
+                </p>
+              </div>
+              <div className="column is-half-desktop">
+                <h2 className="title">
+                  'Out On Bail' Vinyl coming soon... On Green Splattered Vinyl
+                  !!!
+                </h2>
+              </div>
+            </div>
+          </div>
 
-            <h2 className="title pt-6">Kory is on Spotify</h2>
-            <p>
-              <a href="https://warriorsoulofficial.store/">Listen now!</a>
-            </p>
-
-            <h2 className="title pt-6">
-              'Out On Bail' Vinyl coming soon... On Green Splattered Vinyl !!!
-            </h2>
-
-            <h2 className="title pt-6">
+          <div className="block pt-6">
+            <h2 className="title">
               *New For Collectors Of Vinyl* All Kory Clarke SOLO albums Box set
               coming soon for the X-mas Holidaze!! 2022
             </h2>
+            <div className="columns">
+              <div className="column">
+                <StaticImage
+                  src="../images/album-opium.jpeg"
+                  alt="Opium Hotel"
+                />
+              </div>
+              <div className="column"></div>
+            </div>
           </div>
         </section>
 
