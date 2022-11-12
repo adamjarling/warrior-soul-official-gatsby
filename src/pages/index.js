@@ -82,21 +82,26 @@ const IndexPage = ({ data }) => {
                 </h2>
               </div>
             </div>
-          </div>
 
-          <div className="block pt-6">
-            <h2 className="title">
-              *New For Collectors Of Vinyl* All Kory Clarke SOLO albums Box set
-              coming soon for the X-mas Holidaze!! 2022
-            </h2>
-            <div className="columns">
-              <div className="column">
-                <StaticImage
-                  src="../images/album-opium.jpeg"
-                  alt="Opium Hotel"
-                />
+            <div className="block pt-6">
+              <h2 className="title">
+                *New For Collectors Of Vinyl* All Kory Clarke SOLO albums Box
+                set coming soon for the X-mas Holidaze!! 2022
+              </h2>
+              <div className="columns">
+                <div className="column">
+                  <StaticImage
+                    src="../images/album-opium.jpeg"
+                    alt="Opium Hotel"
+                  />
+                </div>
+                <div className="column">
+                  <StaticImage
+                    src="../images/album-payback.jpeg"
+                    alt="Payback"
+                  />
+                </div>
               </div>
-              <div className="column"></div>
             </div>
           </div>
         </section>
@@ -147,33 +152,7 @@ const IndexPage = ({ data }) => {
           </div>
         </section>
 
-        <section className="hero is-medium has-background">
-          <Img
-            fluid={data.cocaine.childImageSharp.fluid}
-            className="hero-background"
-          />
-          <div className="hero-body">
-            <div className="container">
-              <div className="columns is-centered">
-                <div className="column is-4 has-text-left">
-                  {/* <Img fluid={data.logo.childImageSharp.fluid} />} */}
-                </div>
-              </div>
-              <h2 className="title is-uppercase">
-                Cocaine and Other Good Stuff
-              </h2>
-              <h3 className="subtitle"> New covers album</h3>
-              <a
-                href="mailto:warriorsoulmgmt@gmail.com?subject=Cocaine covers album pre-order"
-                className="button"
-              >
-                Buy Now
-              </a>
-            </div>
-          </div>
-        </section>
-
-        <section className="section">
+        {/* <section className="section">
           <div className="container">
             <div className="columns">
               <div className="column content">
@@ -279,7 +258,7 @@ const IndexPage = ({ data }) => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </Layout>
     </div>
   );

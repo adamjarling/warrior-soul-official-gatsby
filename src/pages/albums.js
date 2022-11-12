@@ -31,7 +31,7 @@ const AlbumsPage = ({ data }) => (
         </div>
       </section>
 
-      <NewAlbumFeature />
+      {/* <NewAlbumFeature /> */}
 
       <section className="section">
         <div className="container">

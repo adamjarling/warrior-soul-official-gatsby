@@ -46,7 +46,7 @@ const TourDatesPage = ({ data }) => {
           </div>
         </section>
 
-        <CovidAnnouncement />
+        {/* <CovidAnnouncement /> */}
 
         <section className="section">
           <div className="container">
