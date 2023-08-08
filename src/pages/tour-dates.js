@@ -20,7 +20,7 @@ const TourDatesPage = ({ data }) => {
         country: "Spain",
         name: "La Gramola",
       },
-      url: "",
+      url: "https://www.lagramola.com/html/lagramola.html",
     },
     {
       datetime: "2023-10-20:20:00",
@@ -31,9 +31,9 @@ const TourDatesPage = ({ data }) => {
       venue: {
         city: "Estepona",
         country: "Spain",
-        name: "",
+        name: "Louie Louie",
       },
-      url: "",
+      url: "https://louielouierockbar.com/",
     },
     {
       datetime: "2023-10-21:20:00",
@@ -44,9 +44,9 @@ const TourDatesPage = ({ data }) => {
       venue: {
         city: "Jerez De La Frontera",
         country: "Spain",
-        name: "",
+        name: "La Guarida Del Ángel",
       },
-      url: "",
+      url: "https://www.laguaridadelangel.es/",
     },
     {
       datetime: "2023-10-22:20:00",
@@ -57,9 +57,9 @@ const TourDatesPage = ({ data }) => {
       venue: {
         city: "Alenquer - Lisbon/Portugal",
         country: "Portugal",
-        name: "",
+        name: "Side B Rocks",
       },
-      url: "",
+      url: "https://www.facebook.com/sidebrocks/",
     },
     {
       datetime: "2023-10-24:20:00",
@@ -70,9 +70,9 @@ const TourDatesPage = ({ data }) => {
       venue: {
         city: "Orense",
         country: "Spain",
-        name: "",
+        name: "Café Cultural Auriense",
       },
-      url: "",
+      url: "https://www.facebook.com/cafeauriense",
     },
     {
       datetime: "2023-10-25:20:00",
@@ -83,9 +83,9 @@ const TourDatesPage = ({ data }) => {
       venue: {
         city: "A Coruña",
         country: "Spain",
-        name: "",
+        name: "Mardi Gras",
       },
-      url: "",
+      url: "https://www.salamardigras.com/",
     },
     {
       datetime: "2023-10-26:20:00",
@@ -96,9 +96,9 @@ const TourDatesPage = ({ data }) => {
       venue: {
         city: "León",
         country: "Spain",
-        name: "",
+        name: "Babylon",
       },
-      url: "",
+      url: "https://www.facebook.com/Babylonleon/",
     },
     {
       datetime: "2023-10-27:20:00",
@@ -109,9 +109,9 @@ const TourDatesPage = ({ data }) => {
       venue: {
         city: "Madrid",
         country: "Spain",
-        name: "",
+        name: "Gruta 77",
       },
-      url: "",
+      url: "https://gruta77.com/",
     },
     {
       datetime: "2023-10-29:20:00",
@@ -120,9 +120,9 @@ const TourDatesPage = ({ data }) => {
       lineup: ["Warrior Soul"],
       title: "Live in Bilbao",
       venue: {
-        city: "Bilbao",
+        city: "Portugalete/Bilbao",
         country: "Spain",
-        name: "",
+        name: "https://estudiosgroove.es/",
       },
       url: "",
     },
