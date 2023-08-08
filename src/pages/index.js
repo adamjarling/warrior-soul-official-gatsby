@@ -129,7 +129,7 @@ const IndexPage = ({ data }) => {
           </div>
         </section>
 
-        <section className="section">
+        {/* <section className="section">
           <div className="container">
             <h2 className="title">
               "Cocaine... and Other Good Stuff" official videos!
@@ -167,7 +167,7 @@ const IndexPage = ({ data }) => {
 
             <ReviewMelodyMan />
           </div>
-        </section>
+        </section> */}
 
         <section className="section">
           <div className="container">
