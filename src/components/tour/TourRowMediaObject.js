@@ -1,10 +1,11 @@
+import ExternalLink from "../external-link";
 import React from "react";
 import moment from "moment";
-import ExternalLink from "../external-link";
 
 const TourRowMediaObject = ({ dates }) => {
   return dates.map((date) => {
     const { datetime, description, id, lineup, title, url, venue } = date;
+
     return (
       <article key={id} className="notification is-dark">
         <h3 className="title">
@@ -25,14 +26,14 @@ const TourRowMediaObject = ({ dates }) => {
           <div className="column one-third">
             <div className="buttons is-right">
               <ExternalLink href={url} className="button">
-                RSVP
+                Tickets
               </ExternalLink>
-              <ExternalLink
+              {/* <ExternalLink
                 href={url}
                 className="button is-primary is-outlined"
               >
                 Notify Me
-              </ExternalLink>
+              </ExternalLink> */}
             </div>
           </div>
         </div>

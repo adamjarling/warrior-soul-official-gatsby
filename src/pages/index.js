@@ -1,18 +1,16 @@
-import React from "react";
-import { Link } from "gatsby";
-import SEO from "../components/seo";
-import Layout from "../components/layout";
-import Img from "gatsby-image";
 import ExternalLink from "../components/external-link";
+import Img from "gatsby-image";
+import Layout from "../components/layout";
+import { Link } from "gatsby";
 import MerchLayout from "../components/merch/Layout";
-import { StaticImage } from "gatsby-plugin-image";
+import React from "react";
 import ReviewMelodyMan from "../components/albums/ReviewMelodyMan";
+import SEO from "../components/seo";
+import { StaticImage } from "gatsby-plugin-image";
 import Video from "../components/videos/Video";
 import { graphql } from "gatsby";
 
 const IndexPage = ({ data }) => {
-  console.log("IndexPage -> data", data);
-
   return (
     <div>
       <SEO
@@ -34,9 +32,26 @@ const IndexPage = ({ data }) => {
             className="hero-background"
           />
         </section>
+
         <section className="section">
           <div className="container">
-            <h2 className="title">NEW Warrior Soul Album out now!</h2>
+            <h2 className="title">
+              Tour Dates Announced! 2023 Spain, UK, Benolux/Germany
+            </h2>
+            <div className="content">
+              <p>Warrior Soul is baaaaaaccccck!</p>
+              <p>
+                <a href="/tour-dates" className="button">
+                  View 2023 Tour Dates
+                </a>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="section">
+          <div className="container">
+            <h2 className="title">Out on Bail - out now!</h2>
             <div className="content">
               <p>Warrior Soul's New Record 'OUT ON BAIL' is and on sale.</p>
               <p>
