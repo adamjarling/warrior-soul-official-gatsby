@@ -33,7 +33,7 @@ const TourDatesPage = ({ data }) => {
         country: "England",
         name: "Facebar",
       },
-      url: "",
+      url: "https://www.wegottickets.com/event/590031",
     },
     {
       datetime: "2023-11-12:19:00",
