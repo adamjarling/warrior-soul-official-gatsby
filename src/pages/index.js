@@ -35,11 +35,19 @@ const IndexPage = ({ data }) => {
 
         <section className="section">
           <div className="container">
-            <h2 className="title">
-              Tour Dates Announced! 2023 Spain, UK, Benolux/Germany
-            </h2>
+            <h2 className="title">2023 On Tour Europe!</h2>
             <div className="content">
-              <p>Warrior Soul is baaaaaaccccck!</p>
+              <p>
+                Live, loud, punk, rock, metal! Tour Dates Announced! 2023 Spain,
+                UK, Benolux/Germany
+              </p>
+              <p>
+                <StaticImage
+                  src="../images/photo-live-crowd-bw.jpg"
+                  alt="Kory on stage in Italy"
+                  className="image"
+                />
+              </p>
               <p>
                 <a href="/tour-dates" className="button">
                   View 2023 Tour Dates

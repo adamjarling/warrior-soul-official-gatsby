@@ -1,8 +1,9 @@
+import { graphql, useStaticQuery } from "gatsby";
+
+import Img from "gatsby-image";
 import React from "react";
 import cargo from "../images/logo-cargo-records.jpg";
 import livewire from "../images/logo-livewire.png";
-import { useStaticQuery, graphql } from "gatsby";
-import Img from "gatsby-image";
 
 const styles = {
   logo: {
@@ -14,6 +15,8 @@ const styles = {
 };
 
 export default () => {
+  const year = new Date().getFullYear();
+
   const data = useStaticQuery(graphql`
     query FooterQuery {
       cargo: file(relativePath: { eq: "logo-cargo-records.jpg" }) {
@@ -43,7 +46,7 @@ export default () => {
   return (
     <footer className="footer">
       <div className="container has-text-centered">
-        <p>Copyright 2020 Warrior Soul Official</p>
+        <p>Copyright {year} Warrior Soul Official</p>
         <div className="columns ">
           {/* <div className="column one-third">
             <a

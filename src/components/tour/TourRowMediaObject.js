@@ -19,22 +19,28 @@ const TourRowMediaObject = ({ dates }) => {
             </p>
           </div>
           <div className="column one-third">
-            <ExternalLink href={url} className="is-size-5">
-              {venue.name}
-            </ExternalLink>
+            {url ? (
+              <ExternalLink href={url} className="is-size-5">
+                {venue.name}
+              </ExternalLink>
+            ) : (
+              <span className="is-size-5">{venue.name}</span>
+            )}
           </div>
           <div className="column one-third">
-            <div className="buttons is-right">
-              <ExternalLink href={url} className="button">
-                Tickets
-              </ExternalLink>
-              {/* <ExternalLink
+            {url && (
+              <div className="buttons is-right">
+                <ExternalLink href={url} className="button">
+                  Tickets
+                </ExternalLink>
+                {/* <ExternalLink
                 href={url}
                 className="button is-primary is-outlined"
               >
                 Notify Me
               </ExternalLink> */}
-            </div>
+              </div>
+            )}
           </div>
         </div>
         <h5 className="is-uppercase is-size-7 has-text-warning">Line up</h5>
