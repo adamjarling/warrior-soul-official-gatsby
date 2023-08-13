@@ -9,6 +9,8 @@ import SEO from "../components/seo";
 import { StaticImage } from "gatsby-plugin-image";
 import Video from "../components/videos/Video";
 import { graphql } from "gatsby";
+import moment from "moment";
+import { tourDates } from "./tour-dates";
 
 const IndexPage = ({ data }) => {
   return (
@@ -27,39 +29,70 @@ const IndexPage = ({ data }) => {
           className="hero is-large has-background"
           style={{ minHeight: "80vh" }}
         >
-          <Img
+          {/* <Img
             fluid={data.outOnBail.childImageSharp.fluid}
             className="hero-background"
+          /> */}
+          <StaticImage
+            src="../images/portfolio/KORY-CLARKE-2.jpg"
+            alt="Kory"
+            className="hero-background"
           />
+
+          {/* <div className="hero-body">
+            <div className="container">
+              <h1 className="title is-uppercase">On Tour 2023!</h1>
+              <h2 className="subtitle">
+                Tour dates announced for Spain, UK, Germany, Slovakia
+              </h2>
+            </div>
+          </div> */}
         </section>
 
         <section className="section">
           <div className="container">
-            <h2 className="title">2023 On Tour Europe!</h2>
-            <div className="content">
-              <p>
-                Live, loud, punk, rock, metal! Tour Dates Announced! 2023 Spain,
-                UK, Benolux/Germany
-              </p>
-              <p>
-                <StaticImage
-                  src="../images/photo-live-crowd-bw.jpg"
-                  alt="Kory on stage in Italy"
-                  className="image"
-                />
-              </p>
-              <p>
-                <a href="/tour-dates" className="button">
-                  View 2023 Tour Dates
+            <div className="columns">
+              <div className="column">
+                <a href="/tour-dates">
+                  <StaticImage
+                    src="../images/posters/2023-11-17-glasgow.jpeg"
+                    alt="Spiked Skull logo"
+                  />
                 </a>
-              </p>
+              </div>
+              <div className="column">
+                <div className="content">
+                  <p>
+                    Live, loud, punk, rock metal touring 2023 across Spain,
+                    England, Scotland, Germany, Slovakia and more. 🤘
+                  </p>
+                  {tourDates.slice(0, 3).map((date) => {
+                    return (
+                      <p key={date.datetime} className="pb-5">
+                        <div className="is-size-4 has-text-grey-light">
+                          {moment(date.datetime).format("ddd, MMM DD YYYY")}
+                        </div>
+                        <div className="is-size-3">
+                          {date.venue.city}, {date.venue.country}
+                        </div>
+                      </p>
+                    );
+                  })}
+                  <p>
+                    <a href="/tour-dates" className="button">
+                      View 2023 Tour Dates
+                    </a>
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
 
         <section className="section">
           <div className="container">
-            <h2 className="title">Out on Bail - out now!</h2>
+            <StaticImage src="../images/album-out-on-bail.jpg" alt="Kory" />
+            <h2 className="title pt-4">Out on Bail - out now!</h2>
             <div className="content">
               <p>Warrior Soul's New Record 'OUT ON BAIL' is and on sale.</p>
               <p>
