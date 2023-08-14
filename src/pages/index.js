@@ -10,7 +10,9 @@ import { StaticImage } from "gatsby-plugin-image";
 import Video from "../components/videos/Video";
 import { graphql } from "gatsby";
 import moment from "moment";
+import promoVideo from "../tour-promo-2023.mp4";
 import { tourDates } from "./tour-dates";
+import videoPoster from "../images/tour-promo-2023-video-placeholder.jpg";
 
 const IndexPage = ({ data }) => {
   return (
@@ -25,19 +27,35 @@ const IndexPage = ({ data }) => {
         ]}
       />
       <Layout>
-        <section
-          className="hero is-large has-background"
-          style={{ minHeight: "80vh" }}
-        >
+        <section className="bg-black py-3">
           {/* <Img
             fluid={data.outOnBail.childImageSharp.fluid}
             className="hero-background"
           /> */}
-          <StaticImage
+          {/* <StaticImage
             src="../images/portfolio/KORY-CLARKE-2.jpg"
             alt="Kory"
             className="hero-background"
-          />
+          /> */}
+          <div className="video-container">
+            <video
+              width="320"
+              height="240"
+              controls
+              autoPlay
+              poster={videoPoster}
+              loop
+            >
+              <source src={promoVideo} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          {/* <div className="is-hidden-tablet mt-5 is-flex is-justify-content-center is-align-items-center">
+            <a href="/tour-dates" className="button">
+              View 2023 Tour Dates
+            </a>
+          </div> */}
 
           {/* <div className="hero-body">
             <div className="container">
@@ -68,11 +86,11 @@ const IndexPage = ({ data }) => {
                   </p>
                   {tourDates.slice(0, 3).map((date) => {
                     return (
-                      <p key={date.datetime} className="pb-5">
+                      <p key={date.datetime} className="pb-4 ">
                         <div className="is-size-4 has-text-grey-light">
                           {moment(date.datetime).format("ddd, MMM DD YYYY")}
                         </div>
-                        <div className="is-size-3">
+                        <div className="is-size-3 is-size-4-mobile">
                           {date.venue.city}, {date.venue.country}
                         </div>
                       </p>
