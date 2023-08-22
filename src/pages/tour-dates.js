@@ -177,6 +177,19 @@ export const tourDates = [
     facebook: "https://www.facebook.com/events/1789954904756606",
   },
   {
+    datetime: "2023-11-15T20:00:00",
+    description: "",
+    id: 4,
+    lineup: ["Warrior Soul", "The Fiascos", "Bite Me"],
+    title: "Live in London",
+    venue: {
+      city: "London",
+      country: "England",
+      name: "Boston Music Room - Tufnell Park - London",
+    },
+    url: "https://www.seetickets.com/event/warrior-soul/boston-music-room-tufnell-park/2750944",
+  },
+  {
     datetime: "2023-11-16T20:00:00",
     description: "",
     id: 4,
