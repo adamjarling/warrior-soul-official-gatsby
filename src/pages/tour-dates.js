@@ -232,6 +232,20 @@ export const tourDates = [
     facebook: "https://www.facebook.com/events/949013286204589",
   },
   {
+    datetime: "2023-12-07T20:00:00",
+    description: "",
+    id: 7,
+    lineup: ["Warrior Soul"],
+    title: "Live in Bad Friedrichshall",
+    venue: {
+      city: "Bad Friedrichshall",
+      country: "Germany",
+      name: "Lemmys",
+    },
+    url: " https://www.eventim-light.com/de/a/5d02560698c4210001742bd3/e/64ea627850e5e819ac4ac3db",
+    facebook: "",
+  },
+  {
     datetime: "2023-12-08T20:00:00",
     description: "",
     id: 7,
@@ -243,20 +257,6 @@ export const tourDates = [
       name: "MTS Records",
     },
     url: "https://www.facebook.com/mts.lpscds/events",
-    facebook: "",
-  },
-  {
-    datetime: "2023-12-09T20:00:00",
-    description: "",
-    id: 7,
-    lineup: ["Warrior Soul"],
-    title: "Live in Bad Friedrichshall",
-    venue: {
-      city: "Bad Friedrichshall",
-      country: "Germany",
-      name: "Lemmys",
-    },
-    url: "https://www.lemmy-s.de/",
     facebook: "",
   },
   {
