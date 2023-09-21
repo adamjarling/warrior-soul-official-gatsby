@@ -9,7 +9,7 @@ import { graphql } from "gatsby";
 
 export const tourDates = [
   {
-    datetime: "2023-10-18T20:00:00",
+    datetime: "2023-10-19T20:00:00",
     description: "",
     id: 10,
     lineup: ["Warrior Soul"],
@@ -62,6 +62,20 @@ export const tourDates = [
       name: "Side B Rocks",
     },
     url: "https://www.facebook.com/sidebrocks/",
+    facebook: "",
+  },
+  {
+    datetime: "2023-10-23T20:00:00",
+    description: "",
+    id: 14,
+    lineup: ["Warrior Soul"],
+    title: "Live in Vigo",
+    venue: {
+      city: "Vigo",
+      country: "Spain",
+      name: "Transylvania Vigo",
+    },
+    url: "https://www.facebook.com/transylvaniavigo",
     facebook: "",
   },
   {
@@ -118,6 +132,20 @@ export const tourDates = [
       name: "Gruta 77",
     },
     url: "https://gruta77.com/",
+    facebook: "",
+  },
+  {
+    datetime: "2023-10-28T20:00:00",
+    description: "",
+    id: 18,
+    lineup: ["Warrior Soul"],
+    title: "Live in Logroño",
+    venue: {
+      city: "Logroño",
+      country: "Spain",
+      name: "Sala Fundición",
+    },
+    url: "https://salafundicion.es/",
     facebook: "",
   },
   {
