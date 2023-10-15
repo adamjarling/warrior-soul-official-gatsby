@@ -18,8 +18,8 @@ const TourRowMediaObject = ({ dates }) => {
             </p>
           </div>
           <div className="column one-third">
-            {url ? (
-              <ExternalLink href={url} className="is-size-5">
+            {venue.url ? (
+              <ExternalLink href={venue.url} className="is-size-5">
                 {venue.name}
               </ExternalLink>
             ) : (
@@ -28,7 +28,7 @@ const TourRowMediaObject = ({ dates }) => {
           </div>
           <div className="column one-third">
             {url && (
-              <div className="buttons is-right ">
+              <div className="buttons is-right">
                 <ExternalLink href={url} className="button">
                   Tickets
                 </ExternalLink>

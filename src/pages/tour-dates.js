@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 
-import CovidAnnouncement from "../components/covid-announcement";
 import Img from "gatsby-image";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
@@ -11,55 +10,55 @@ export const tourDates = [
   {
     datetime: "2023-10-19T20:00:00",
     description: "",
-    id: 10,
     lineup: ["Warrior Soul"],
     title: "Live Orihuela",
     venue: {
       city: "Orihuela",
       country: "Spain",
       name: "La Gramola",
+      url: "https://www.lagramola.com/",
     },
-    url: "https://www.lagramola.com/html/lagramola.html",
-    facebook: "",
+    url: "https://entradium.com/events/warrior-soul-en-la-gramola-orihuela",
+    facebook: "https://fb.me/e/1iHuJ0Qnm",
   },
   {
-    datetime: "2023-10-20T20:00:00",
+    datetime: "2023-10-20T23:00:00",
     description: "",
-    id: 12,
     lineup: ["Warrior Soul"],
     title: "Live in Estepona",
     venue: {
       city: "Estepona",
       country: "Spain",
       name: "Louie Louie",
+      url: "https://louielouierockbar.com/",
     },
-    url: "https://louielouierockbar.com/",
-    facebook: "",
+    url: "https://www.woutick.es/evento/25752/entradas-warrior-soul",
+    facebook: "https://www.facebook.com/events/1352344298969322",
   },
   {
     datetime: "2023-10-21T20:00:00",
     description: "",
-    id: 13,
     lineup: ["Warrior Soul"],
     title: "Live in Jerez De La Frontera",
     venue: {
       city: "Jerez De La Frontera",
       country: "Spain",
       name: "La Guarida Del Ángel",
+      url: "https://www.laguaridadelangel.es/",
     },
-    url: "https://www.laguaridadelangel.es/",
-    facebook: "",
+    url: "https://mutick.com/e/entradas-warrior-soul-jerez",
+    facebook: "https://www.facebook.com/events/334159485649358",
   },
   {
     datetime: "2023-10-22T20:00:00",
     description: "",
-    id: 14,
     lineup: ["Warrior Soul"],
     title: "Live in Alenquer - Lisbon/Portugal",
     venue: {
       city: "Alenquer - Lisbon/Portugal",
       country: "Portugal",
       name: "Side B Rocks",
+      url: "",
     },
     url: "https://www.facebook.com/sidebrocks/",
     facebook: "",
@@ -67,7 +66,6 @@ export const tourDates = [
   {
     datetime: "2023-10-23T20:00:00",
     description: "",
-    id: 14,
     lineup: ["Warrior Soul"],
     title: "Live in Vigo",
     venue: {
@@ -81,7 +79,6 @@ export const tourDates = [
   {
     datetime: "2023-10-24T20:00:00",
     description: "",
-    id: 15,
     lineup: ["Warrior Soul"],
     title: "Live in Orense",
     venue: {
@@ -95,77 +92,76 @@ export const tourDates = [
   {
     datetime: "2023-10-25T20:00:00",
     description: "",
-    id: 16,
     lineup: ["Warrior Soul"],
     title: "Live in A Coruña",
     venue: {
       city: "A Coruña",
       country: "Spain",
       name: "Mardi Gras",
+      url: "https://www.salamardigras.com/",
     },
-    url: "https://www.salamardigras.com/",
+    url: "https://www.masqueticket.com/entrada/1109-warrior-soul-a-coruna",
     facebook: "",
   },
   {
     datetime: "2023-10-26T20:00:00",
     description: "",
-    id: 17,
     lineup: ["Warrior Soul"],
     title: "Live in León",
     venue: {
       city: "León",
       country: "Spain",
       name: "Babylon",
+      url: "https://www.facebook.com/Babylonleon/",
     },
-    url: "https://www.facebook.com/Babylonleon/",
-    facebook: "",
+    url: "https://www.woutick.es/evento/25550/entradas-warrior-soul-en-leon",
+    facebook: "https://www.facebook.com/events/1477119476387676",
   },
   {
     datetime: "2023-10-27T20:00:00",
     description: "",
-    id: 18,
     lineup: ["Warrior Soul"],
     title: "Live in Madrid",
     venue: {
       city: "Madrid",
       country: "Spain",
       name: "Gruta 77",
+      url: "https://gruta77.com/",
     },
-    url: "https://gruta77.com/",
-    facebook: "",
+    url: "https://movingtickets.com/Entradas-Warrior-Soul-Del-Tornados-concierto-en-Gruta77-Madrid/",
+    facebook: "https://www.facebook.com/events/1241122846564726",
   },
   {
     datetime: "2023-10-28T20:00:00",
     description: "",
-    id: 18,
     lineup: ["Warrior Soul"],
     title: "Live in Logroño",
     venue: {
       city: "Logroño",
       country: "Spain",
       name: "Sala Fundición",
+      url: "https://salafundicion.es/",
     },
-    url: "https://salafundicion.es/",
+    url: "https://www.woutick.es/evento/25856/entradas-warrior-soul-usa--tom-killner-uk",
     facebook: "",
   },
   {
     datetime: "2023-10-29T20:00:00",
     description: "",
-    id: 19,
     lineup: ["Warrior Soul"],
     title: "Live in Bilbao",
     venue: {
       city: "Portugalete/Bilbao",
       country: "Spain",
       name: "Groove Estudios",
+      url: "https://estudiosgroove.es/",
     },
-    url: "https://estudiosgroove.es/",
+    url: "https://entradium.com/es/events/warrior-soul-portugalete",
     facebook: "",
   },
   {
     datetime: "2023-11-09T20:00:00",
     description: "",
-    id: 1,
     lineup: ["Warrior Soul"],
     title: "Live in Buckley",
     venue: {
@@ -179,7 +175,6 @@ export const tourDates = [
   {
     datetime: "2023-11-10T20:00:00",
     description: "",
-    id: 2,
     lineup: ["Warrior Soul"],
     title: "Live in Reading",
     venue: {
@@ -193,7 +188,6 @@ export const tourDates = [
   {
     datetime: "2023-11-12T20:00:00",
     description: "",
-    id: 3,
     lineup: ["Warrior Soul"],
     title: "Live in Crumlin",
     venue: {
@@ -207,7 +201,7 @@ export const tourDates = [
   {
     datetime: "2023-11-15T20:00:00",
     description: "",
-    id: 4,
+
     lineup: ["Warrior Soul", "The Fiascos", "Bite Me"],
     title: "Live in London",
     venue: {
@@ -220,7 +214,6 @@ export const tourDates = [
   {
     datetime: "2023-11-16T20:00:00",
     description: "",
-    id: 4,
     lineup: ["Warrior Soul"],
     title: "Live in Blackpool",
     venue: {
@@ -234,7 +227,6 @@ export const tourDates = [
   {
     datetime: "2023-11-17T20:00:00",
     description: "",
-    id: 5,
     lineup: ["Warrior Soul"],
     title: "Live in Glasgow",
     venue: {
@@ -248,7 +240,6 @@ export const tourDates = [
   {
     datetime: "2023-11-18T20:00:00",
     description: "",
-    id: 6,
     lineup: ["Warrior Soul"],
     title: "Live in Edinburgh",
     venue: {
@@ -262,7 +253,6 @@ export const tourDates = [
   {
     datetime: "2023-12-07T20:00:00",
     description: "",
-    id: 7,
     lineup: ["Warrior Soul"],
     title: "Live in Bad Friedrichshall",
     venue: {
@@ -276,7 +266,6 @@ export const tourDates = [
   {
     datetime: "2023-12-08T20:00:00",
     description: "",
-    id: 7,
     lineup: ["Warrior Soul"],
     title: "Live in Oldenburg",
     venue: {
@@ -290,7 +279,6 @@ export const tourDates = [
   {
     datetime: "2023-12-12T20:00:00",
     description: "",
-    id: 7,
     lineup: ["Warrior Soul"],
     title: "Live in Munich",
     venue: {
@@ -304,7 +292,6 @@ export const tourDates = [
   {
     datetime: "2023-12-13T20:00:00",
     description: "",
-    id: 7,
     lineup: ["Warrior Soul"],
     title: "Live in Vienna",
     venue: {
@@ -318,7 +305,6 @@ export const tourDates = [
   {
     datetime: "2023-12-14T20:00:00",
     description: "",
-    id: 7,
     lineup: ["Warrior Soul"],
     title: "Live in Bratislava",
     venue: {
@@ -332,7 +318,6 @@ export const tourDates = [
   {
     datetime: "2023-12-16T20:00:00",
     description: "",
-    id: 8,
     lineup: ["Warrior Soul"],
     title: "Live in Döbeln",
     venue: {
@@ -348,17 +333,17 @@ export const tourDates = [
 const TourDatesPage = ({ data }) => {
   const [dates, setDates] = useState(tourDates);
 
-  // useEffect(() => {
-  //   async function fn() {
-  //     const response = await fetch(
-  //       "https://rest.bandsintown.com/artists/warriorsoul/events?app_id=479f600310e79e4c65edd7b6c286adef"
-  //     );
-  //     const responseData = await response.json();
-  //     console.log("fn -> responseData", responseData);
-  //     setDates(responseData);
-  //   }
-  //   fn();
-  // }, []);
+  useEffect(() => {
+    async function fn() {
+      const response = await fetch(
+        "https://rest.bandsintown.com/artists/warriorsoul/events?app_id=479f600310e79e4c65edd7b6c286adef"
+      );
+      const responseData = await response.json();
+      console.log("fn -> responseData", responseData);
+      //setDates(responseData);
+    }
+    fn();
+  }, []);
 
   return (
     <div>
@@ -384,8 +369,6 @@ const TourDatesPage = ({ data }) => {
             </div>
           </div>
         </section>
-
-        {/* <CovidAnnouncement /> */}
 
         <section className="section">
           <div className="container">
