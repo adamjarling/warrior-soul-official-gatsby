@@ -84,7 +84,7 @@ const IndexPage = ({ data }) => {
                     Live, loud, punk, rock metal touring 2023 across Spain,
                     England, Scotland, Germany, Slovakia and more. 🤘
                   </p>
-                  {tourDates.slice(0, 3).map((date) => {
+                  {tourDates.slice(11, 15).map((date) => {
                     return (
                       <p key={date.datetime} className="pb-4 ">
                         <div className="is-size-4 has-text-grey-light">
@@ -96,9 +96,10 @@ const IndexPage = ({ data }) => {
                       </p>
                     );
                   })}
+
                   <p>
                     <a href="/tour-dates" className="button">
-                      View 2023 Tour Dates
+                      View All Tour Dates
                     </a>
                   </p>
                 </div>
