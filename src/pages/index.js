@@ -73,7 +73,7 @@ const IndexPage = ({ data }) => {
               <div className="column">
                 <a href="/tour-dates">
                   <StaticImage
-                    src="../images/posters/2023-11-17-glasgow.jpeg"
+                    src="../images/posters/WS-15th-Nov-London.jpeg"
                     alt="Spiked Skull logo"
                   />
                 </a>
@@ -103,6 +103,25 @@ const IndexPage = ({ data }) => {
                     </a>
                   </p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="section">
+          <div className="container">
+            <div className="columns">
+              <div className="column">
+                <StaticImage
+                  src="../images/posters/2023-slim-jims-london-after-party.jpeg"
+                  alt="London 2023 November after party flyer"
+                />
+              </div>
+              <div className="column">
+                <StaticImage
+                  src="../images/posters/2023-11-09.jpeg"
+                  alt="Flyer for Tivoli in Buckley"
+                />
               </div>
             </div>
           </div>

@@ -207,9 +207,22 @@ export const tourDates = [
     venue: {
       city: "London",
       country: "England",
-      name: "Boston Music Room - Tufnell Park - London",
+      name: "Downstairs at the Dome - Tufnell Park - London",
     },
     url: "https://www.seetickets.com/event/warrior-soul/boston-music-room-tufnell-park/2750944",
+  },
+  {
+    datetime: "2023-11-15T23:00:00",
+    description: "After party!",
+
+    lineup: [],
+    title: "Official After Party",
+    venue: {
+      city: "London",
+      country: "England",
+      name: "Arno Von Detrius Presents...The Official After Party...Slim Jims Liquor Store. 11pm - 2am.  FREE",
+    },
+    url: "https://www.slimjimsliquorstore.com/",
   },
   {
     datetime: "2023-11-16T20:00:00",
