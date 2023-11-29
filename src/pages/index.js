@@ -84,7 +84,7 @@ const IndexPage = ({ data }) => {
                     Live, loud, punk, rock metal touring 2023 across Spain,
                     England, Scotland, Germany, Slovakia and more. 🤘
                   </p>
-                  {tourDates.slice(11, 15).map((date) => {
+                  {tourDates.slice(19).map((date) => {
                     return (
                       <p key={date.datetime} className="pb-4 ">
                         <div className="is-size-4 has-text-grey-light">
@@ -103,25 +103,6 @@ const IndexPage = ({ data }) => {
                     </a>
                   </p>
                 </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="section">
-          <div className="container">
-            <div className="columns">
-              <div className="column">
-                <StaticImage
-                  src="../images/posters/2023-slim-jims-london-after-party.jpeg"
-                  alt="London 2023 November after party flyer"
-                />
-              </div>
-              <div className="column">
-                <StaticImage
-                  src="../images/posters/2023-11-09.jpeg"
-                  alt="Flyer for Tivoli in Buckley"
-                />
               </div>
             </div>
           </div>

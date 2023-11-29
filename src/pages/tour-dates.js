@@ -328,19 +328,19 @@ export const tourDates = [
     url: "https://muzeumobchodu.sk/",
     facebook: "",
   },
-  {
-    datetime: "2023-12-16T20:00:00",
-    description: "",
-    lineup: ["Warrior Soul"],
-    title: "Live in Döbeln",
-    venue: {
-      city: "Döbeln",
-      country: "Germany",
-      name: "KL17",
-    },
-    url: "https://www.eventim.de/noapp/event/17291660/",
-    facebook: "",
-  },
+  // {
+  //   datetime: "2023-12-16T20:00:00",
+  //   description: "",
+  //   lineup: ["Warrior Soul"],
+  //   title: "Live in Döbeln",
+  //   venue: {
+  //     city: "Döbeln",
+  //     country: "Germany",
+  //     name: "KL17",
+  //   },
+  //   url: "https://www.eventim.de/noapp/event/17291660/",
+  //   facebook: "",
+  // },
 ];
 
 const TourDatesPage = ({ data }) => {
