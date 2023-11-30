@@ -110,17 +110,18 @@ const IndexPage = ({ data }) => {
 
         <section className="section">
           <div className="container">
+            <MerchLayout />
+          </div>
+        </section>
+
+        <section className="section">
+          <div className="container">
             <StaticImage src="../images/album-out-on-bail.jpg" alt="Kory" />
             <h2 className="title pt-4">Out on Bail - out now!</h2>
             <div className="content">
-              <p>Warrior Soul's New Record 'OUT ON BAIL' is and on sale.</p>
               <p>
-                For orders, contact:{" "}
-                <a href="mailto:warriorsoulmgmt@gmail.com">
-                  warriorsoulmgmt@gmail.com
-                </a>{" "}
-                Thanks for your continued support...'And We Rock And Roll' 'F**k
-                The Pigs'
+                Warrior Soul's New Record 'OUT ON BAIL' is and on sale. Pick up
+                your copy (or signed copy) today!
               </p>
             </div>
           </div>
@@ -161,7 +162,7 @@ const IndexPage = ({ data }) => {
             <div className="block pt-6">
               <h2 className="title">
                 *New For Collectors Of Vinyl* All Kory Clarke SOLO albums Box
-                set coming soon for the X-mas Holidaze!! 2022
+                set coming soon for the X-mas Holidaze!!
               </h2>
               <div className="columns">
                 <div className="column">
@@ -220,12 +221,6 @@ const IndexPage = ({ data }) => {
             <ReviewMelodyMan />
           </div>
         </section> */}
-
-        <section className="section">
-          <div className="container">
-            <MerchLayout />
-          </div>
-        </section>
 
         {/* <section className="section">
           <div className="container">

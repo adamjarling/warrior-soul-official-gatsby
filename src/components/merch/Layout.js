@@ -1,11 +1,22 @@
-import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
+import { graphql, useStaticQuery } from "gatsby";
+
 import Img from "gatsby-image";
+import React from "react";
+
+const storeLink =
+  "https://warrior-soul-official-store.myshopify.com/collections/all";
 
 const MerchLayout = () => {
   const data = useStaticQuery(graphql`
     query MerchLayoutQuery {
       cocaine: file(relativePath: { eq: "cocaine-and-stuff.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1440) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      outOnBail: file(relativePath: { eq: "album-out-on-bail.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1440) {
             ...GatsbyImageSharpFluid
@@ -84,17 +95,24 @@ const MerchLayout = () => {
         <div className="column is-one-third">
           <div className="card">
             <div className="card-image">
+              <Img fluid={data.outOnBail.childImageSharp.fluid} />
+            </div>
+            <div className="card-content">
+              <h3 className="title is-3">Out On Bail</h3>
+              <p>Latest Warrior Soul album, out now!</p>
+              <a href={storeLink} target="_blank" className="button">
+                Buy Now
+              </a>
+            </div>
+          </div>
+          <div className="card">
+            <div className="card-image">
               <Img fluid={data.cocaine.childImageSharp.fluid} />
             </div>
             <div className="card-content">
               <h3 className="title is-3">Cocaine and Other Good Stuff</h3>
-              <p>
-                For CD and T-Shirt pre-orders, email warriorsoulmgmt@gmail.com
-              </p>
-              <a
-                href="mailto:warriorsoulmgmt@gmail.com?subject=Cocaine covers album pre-order"
-                className="button"
-              >
+              <p>Covers done in Kory Clarke style</p>
+              <a href={storeLink} target="_blank" className="button">
                 Buy Now
               </a>
             </div>
@@ -105,11 +123,8 @@ const MerchLayout = () => {
             </div>
             <div className="card-content">
               <h3 className="title is-3">Rock N Roll Disease Vinyl</h3>
-              <p> 20 Euros plus 18 shipping registered mail/tracking number</p>
-              <a
-                href="mailto:warriorsoulmgmt@gmail.com?subject=Order RnR Disease Vinyl"
-                className="button"
-              >
+              <p>Wicked cool vinyl pressing</p>
+              <a href={storeLink} target="_blank" className="button">
                 Buy Now
               </a>
             </div>
@@ -121,14 +136,8 @@ const MerchLayout = () => {
             </div>
             <div className="card-content">
               <h3 className="title is-3">Ass Kickin Rockin Roll Tees</h3>
-              <p>
-                (Silver print on black and white on black) - Clearance or Sale
-                item 15 euros plus 15 shipping
-              </p>
-              <a
-                href="mailto:warriorsoulmgmt@gmail.com?subject=Order Ass Kickin T"
-                className="button"
-              >
+              <p>(Silver print on black and white on black)</p>
+              <a href={storeLink} target="_blank" className="button">
                 Buy Now
               </a>
             </div>
@@ -141,11 +150,8 @@ const MerchLayout = () => {
             </div>
             <div className="card-content">
               <h3 className="title is-3">Warrior Soul NEW Tour Shirt</h3>
-              <p> 20 Euros plus 15 shipping</p>
-              <a
-                href="mailto:warriorsoulmgmt@gmail.com?subject=New Tour T-Shirt"
-                className="button"
-              >
+
+              <a href={storeLink} target="_blank" className="button">
                 Buy Now
               </a>
             </div>
@@ -158,14 +164,8 @@ const MerchLayout = () => {
             </div>
             <div className="card-content">
               <h3 className="title is-3"></h3>
-              <p>
-                Warrior Soul 'Rock n Roll Disease' VINLY unsigned. 20 Euros plus
-                18 shipping
-              </p>
-              <a
-                href="mailto:warriorsoulmgmt@gmail.com?subject=RnR Disease Vinyl"
-                className="button"
-              >
+              <p>Warrior Soul 'Rock n Roll Disease' VINLY unsigned</p>
+              <a href={storeLink} target="_blank" className="button">
                 Buy Now
               </a>
             </div>
@@ -182,14 +182,10 @@ const MerchLayout = () => {
                 Limited Test Pressings Vinyl 'Rock n Roll Disease' Signed
               </h3>
               <p>
-                Only 2 left out of 6 (65 Euros plus 17 shipping) - Registered
-                with tracking number. This includes a handwritten song of your
-                choice on the sleeve of the album and signed of course.
+                This includes a handwritten song of your choice on the sleeve of
+                the album and signed of course.
               </p>
-              <a
-                href="mailto:warriorsoulmgmt@gmail.com?subject=Limited Test Press Vinyl"
-                className="button"
-              >
+              <a href={storeLink} target="_blank" className="button">
                 Buy Now
               </a>
             </div>
@@ -201,14 +197,8 @@ const MerchLayout = () => {
             </div>
             <div className="card-content">
               <h3 className="title is-3">Rock N Roll Disease Tour Tees</h3>
-              <p>
-                (Gold print on black) - Clearance or Sale item 15 euros plus 15
-                shipping
-              </p>
-              <a
-                href="mailto:warriorsoulmgmt@gmail.com?subject=Rock N Roll Disease T-Shirt"
-                className="button"
-              >
+              <p>(Gold print on black) - Clearance or Sale item</p>
+              <a href={storeLink} target="_blank" className="button">
                 Buy Now
               </a>
             </div>

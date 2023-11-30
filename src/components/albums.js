@@ -1,17 +1,17 @@
-import React from "react";
 import Album from "./albums/SingleAlbum";
+import React from "react";
+import albumClassics from "../images/album-classics.jpg";
+import albumCocaine from "../images/cocaine-and-stuff.jpg";
+import albumDisease from "../images/album-rnr-disease.jpg";
 import albumDrugsGod from "../images/album-drugs-god-new-republic.jpg";
+import albumLash from "../images/album-back-on-the-lash.jpg";
 import albumLastDecade from "../images/album-last-decade-dead-century.jpg";
+import albumOutOnBail from "../images/album-out-on-bail.jpg";
+import albumPayback from "../images/album-paybacks-a-bitch.jpg";
 import albumSalutations from "../images/album-salutations-ghetto-nation.jpg";
 import albumSpaceAge from "../images/album-space-age-playboys.jpg";
-import albumClassics from "../images/album-classics.jpg";
-import albumWarMachine from "../images/album-destroy-the-war-machine.jpg";
-import albumLash from "../images/album-back-on-the-lash.jpg";
 import albumStiffMiddleFinger from "../images/album-stiff-middle-finger.jpg";
-import albumPayback from "../images/album-paybacks-a-bitch.jpg";
-import albumDisease from "../images/album-rnr-disease.jpg";
-import albumCocaine from "../images/cocaine-and-stuff.jpg";
-import albumOutOnBail from "../images/album-out-on-bail.jpg";
+import albumWarMachine from "../images/album-destroy-the-war-machine.jpg";
 
 const Albums = () => {
   return (
@@ -23,7 +23,7 @@ const Albums = () => {
           recordLabel="Cargo Records UK / Livewire"
           released="March 2022"
           producers="Kory Clarke and Rune"
-          url=""
+          url="https://www.amazon.com/Out-Bail-Warrior-Soul/dp/B09R3DHCHG"
           year="2022"
           iTunes="https://music.apple.com/us/album/out-on-bail/1607309289"
           spotify="https://open.spotify.com/album/1miCOPXXfyaSWdPFyTROJO"
