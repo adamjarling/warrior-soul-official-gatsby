@@ -33,50 +33,6 @@ const IndexPage = ({ data }) => {
             alt="Kory"
             className="hero-background"
           />
-          <section className="py-3 section">
-            <StaticImage
-              src="../images/blabbermouth-lars.jpg"
-              alt="Blabbermouth Lars Ulrich has been listending to Warrior Soul"
-              className="hero-background"
-            />
-            <p className="container py-6">
-              "WARRIOR SOUL, ... have made just some incredible records. WARRIOR
-              SOUL is underappreciated. So mostly — I mean, the record that I go
-              back to, but a lot of their early stuff is all great, but there's
-              an intensity and a vibe around 'The Space Age Playboys' album...
-              songs like 'Rocket Engines', 'Let's Get Wasted', 'The Pretty
-              Faces', 'Rotten Soul', 'Fightin' The War', 'The Drug' — all these
-              songs are incredible. There's a sound and a vibe on that record
-              that still perseveres close to 30 years later, and there's an
-              energy in that record and right in that zone between hard rock,
-              heavy metal, but a lot of punk attitude and a lot of kind of not
-              giving a shit and the two-finger salute and really kind of
-              rebellious contrarian energy that that record in particular sounds
-              as fresh today as it did a couple, three decades ago when it came
-              out." - LARS ULRICH - Metallica
-            </p>
-            <p className="has-text-centered pb-6">
-              <a
-                className="button"
-                href="https://blabbermouth.net/news/metallicas-lars-ulrich-has-been-listening-to-a-lot-of-lynyrd-skynyrd-and-warrior-soul"
-              >
-                Read Full Article
-              </a>
-            </p>
-          </section>
-          <div className="video-container">
-            <video
-              width="320"
-              height="240"
-              controls
-              autoPlay
-              poster={videoPoster}
-              loop
-            >
-              <source src={promoVideo} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
 
           {/* <div className="is-hidden-tablet mt-5 is-flex is-justify-content-center is-align-items-center">
             <a href="/tour-dates" className="button">
@@ -92,6 +48,48 @@ const IndexPage = ({ data }) => {
               </h2>
             </div>
           </div> */}
+        </section>
+
+        <section className="has-text-centered">
+          <Link to="/tour-dates">
+            <StaticImage
+              src="../images/posters/sap-uk-2024.jpeg"
+              alt="Space Age Playboys UK Tour 2024"
+              className="hero-background"
+            />
+          </Link>
+        </section>
+
+        <section className="py-3 section">
+          <StaticImage
+            src="../images/blabbermouth-lars.jpg"
+            alt="Blabbermouth Lars Ulrich has been listending to Warrior Soul"
+            className="hero-background"
+          />
+          <p className="container py-6">
+            "WARRIOR SOUL, ... have made just some incredible records. WARRIOR
+            SOUL is underappreciated. So mostly — I mean, the record that I go
+            back to, but a lot of their early stuff is all great, but there's an
+            intensity and a vibe around 'The Space Age Playboys' album... songs
+            like 'Rocket Engines', 'Let's Get Wasted', 'The Pretty Faces',
+            'Rotten Soul', 'Fightin' The War', 'The Drug' — all these songs are
+            incredible. There's a sound and a vibe on that record that still
+            perseveres close to 30 years later, and there's an energy in that
+            record and right in that zone between hard rock, heavy metal, but a
+            lot of punk attitude and a lot of kind of not giving a shit and the
+            two-finger salute and really kind of rebellious contrarian energy
+            that that record in particular sounds as fresh today as it did a
+            couple, three decades ago when it came out." - LARS ULRICH -
+            Metallica
+          </p>
+          <p className="has-text-centered pb-6">
+            <a
+              className="button"
+              href="https://blabbermouth.net/news/metallicas-lars-ulrich-has-been-listening-to-a-lot-of-lynyrd-skynyrd-and-warrior-soul"
+            >
+              Read Full Article
+            </a>
+          </p>
         </section>
 
         {/* <section className="section">
