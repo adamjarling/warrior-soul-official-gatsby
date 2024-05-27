@@ -22,9 +22,9 @@ export default function Home() {
       <Section size={"1"}>
         <BannerImage />
       </Section>
-      <Section size={"1"}>
+      <Section size={"2"}>
         <Container>
-          <Flex direction={"column"} align={"center"} gapY={"4"}>
+          <Flex direction={"column"} align={"center"} gapY={"7"}>
             <Heading
               as="h2"
               align="center"
@@ -64,12 +64,14 @@ export default function Home() {
       </Section>
       <Section>
         <Container>
-          <Image
-            src="/images/sap-uk-2024-promo.jpeg"
-            width="808"
-            height="960"
-            alt="Space Age Playboys UK Tour 2024"
-          />
+          <Flex width={"100vw"} direction={"column"} align={"center"}>
+            <Image
+              src="/images/sap-uk-2024-promo.jpeg"
+              width="808"
+              height="960"
+              alt="Space Age Playboys UK Tour 2024"
+            />
+          </Flex>
         </Container>
       </Section>
     </main>

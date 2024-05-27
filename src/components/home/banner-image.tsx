@@ -18,7 +18,7 @@ export default function BannerImage() {
       transition={{
         duration: 0.75,
       }}
-      className="relative h-[58vh] md:h-[75vh]"
+      className="relative h-[70vh] md:h-[75vh]"
     >
       <Image
         src="/images/warrior-soul-promo-photo.jpeg"

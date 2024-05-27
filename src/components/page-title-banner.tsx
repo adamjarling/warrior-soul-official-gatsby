@@ -6,10 +6,13 @@ import logo from "/public/images/warrior-soul-logo-one-line.png";
 export default function PageTitleBanner({ pageTitle }: { pageTitle: string }) {
   return (
     <Container>
-      <Section size={"3"}>
+      <Section size={"2"}>
         <Flex
           className="relative"
           px={"8"}
+          pt={{
+            initial: "9",
+          }}
           gap={{
             initial: "5",
             md: "7",
@@ -20,7 +23,7 @@ export default function PageTitleBanner({ pageTitle }: { pageTitle: string }) {
           <Heading
             align="center"
             size={{
-              initial: "9",
+              initial: "8",
               sm: "9",
             }}
             style={{

@@ -50,7 +50,7 @@ export default function ArtPage() {
             >
               {item.title}
             </Heading>
-            <Text as="p" align={"center"}>
+            <Text as="p" align={"center"} color="gray">
               {item.content}
             </Text>
           </Box>

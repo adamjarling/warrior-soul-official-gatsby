@@ -7,7 +7,8 @@ import Image from "next/image";
 import NextLink from "next/link";
 import React from "react";
 import fatLogo from "/public/images/warrior-soul-logo-full-white.png";
-import logo from "/public/images/warrior-soul-logo-one-line.png";
+import logo from "/public/images/warrior-soul-logo-white.png";
+import logoOneLine from "/public/images/warrior-soul-logo-one-line.png";
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
 
@@ -26,8 +27,6 @@ const navigation = [
   // { name: "Contact", href: "#" },
 ];
 
-const MotionBox = motion(Box);
-
 const Header = () => {
   const [open, setOpen] = React.useState(false);
   const router = useRouter();
@@ -43,19 +42,29 @@ const Header = () => {
   return (
     <Dialog.Root open={open} onOpenChange={setOpen}>
       <Flex
-        position={"relative"}
+        position={"fixed"}
         justify={"between"}
-        align={"center"}
+        align={{
+          initial: "center",
+          md: "start",
+        }}
         width={"100%"}
-        p={"5"}
+        py={"5"}
+        px={"6"}
         className="z-10"
       >
-        <Box>
+        <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-t from-transparent to-black"></div>
+        <Box position={"relative"}>
           <NextLink href={"/"}>
             <Image
               src={logo}
               alt="Warrior Soul splash image"
-              className="h-8 w-auto"
+              className="h-16 w-auto hidden md:block"
+            />
+            <Image
+              src={logoOneLine}
+              alt="Warrior Soul splash image"
+              className="h-6 w-auto block md:hidden"
             />
           </NextLink>
         </Box>
@@ -65,6 +74,7 @@ const Header = () => {
             size={"2"}
             style={{
               padding: `var(--space-1)`,
+              position: "relative",
             }}
           >
             <Zap className="w-8 h-8 text-white" />
@@ -104,13 +114,16 @@ const Header = () => {
               direction={"column"}
               justify={"center"}
               align={"center"}
-              gap={"7"}
+              gap={{
+                initial: "6",
+                md: "7",
+              }}
             >
               <Link href="/">
                 <Image
-                  src={fatLogo}
+                  src={logo}
                   alt="Warrior Soul splash image"
-                  className="h-40 w-auto"
+                  className="h-20 w-auto"
                 />
               </Link>
               {navigation.map((item) => (
@@ -120,7 +133,10 @@ const Header = () => {
                   onClick={() => handleClick(item)}
                 >
                   <Text
-                    size={"9"}
+                    size={{
+                      initial: "8",
+                      sm: "9",
+                    }}
                     style={{
                       textTransform: "uppercase",
                     }}
