@@ -1,29 +1,17 @@
 import "@radix-ui/themes/styles.css";
 import "@/styles/globals.css";
 
-import {
-  Electrolize,
-  Kdam_Thmor_Pro,
-  Oswald,
-  Protest_Revolution,
-  Quantico,
-  Raleway,
-  Special_Elite,
-  Squada_One,
-  Tenor_Sans,
-  Titillium_Web,
-} from "next/font/google";
-
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import type { Metadata } from "next";
+import { Raleway } from "next/font/google";
 import { Theme } from "@radix-ui/themes";
 
-const kdam = Kdam_Thmor_Pro({
+const raleway = Raleway({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-kdam",
-  weight: "400",
+  variable: "--font-raleway",
+  weight: ["200", "300", "400", "500", "600", "700", "900"],
 });
 
 export const metadata: Metadata = {
@@ -32,7 +20,7 @@ export const metadata: Metadata = {
     default: "Warrior Soul",
   },
   description:
-    "Official Band Website - Kory Clarke | Warrior Soul will rock you",
+    "Official Band Website - Kory Clarke | Warrior Soul hard rock from New York City",
 };
 
 export default function RootLayout({
@@ -42,11 +30,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${kdam.variable} ${kdam.className}`}>
+      <body className={`${raleway.variable}`}>
         <Theme accentColor="teal" appearance="dark" radius="none">
-          <div
+          {/* <div
             className={`bg-[url("/images/bg-texture.jpg")] w-screen h-screen fixed opacity-[3%]`}
-          ></div>
+          ></div> */}
           <div className="relative">
             <Header />
             {children}

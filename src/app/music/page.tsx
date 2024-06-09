@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function MusicPage() {
   return (
     <main>
-      <PageTitleBanner pageTitle="Music / Albums" />
+      <PageTitleBanner pageTitle="Albums" />
       <Container>
         <MusicList />
       </Container>

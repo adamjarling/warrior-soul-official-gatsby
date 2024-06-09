@@ -29,9 +29,10 @@ export default function Home() {
               as="h2"
               align="center"
               size={{
-                initial: "8",
+                initial: "9",
                 sm: "9",
               }}
+              weight={"bold"}
               style={{
                 textTransform: "uppercase",
               }}
@@ -64,7 +65,7 @@ export default function Home() {
       </Section>
       <Section>
         <Container>
-          <Flex width={"100vw"} direction={"column"} align={"center"}>
+          <Flex direction={"column"} align={"center"} justify={"center"}>
             <Image
               src="/images/sap-uk-2024-promo.jpeg"
               width="808"

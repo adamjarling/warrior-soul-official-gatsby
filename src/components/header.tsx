@@ -123,7 +123,7 @@ const Header = () => {
                 <Image
                   src={logo}
                   alt="Warrior Soul splash image"
-                  className="h-20 w-auto"
+                  className="h-20 w-auto mb-6"
                 />
               </Link>
               {navigation.map((item) => (
@@ -137,6 +137,7 @@ const Header = () => {
                       initial: "8",
                       sm: "9",
                     }}
+                    weight={"bold"}
                     style={{
                       textTransform: "uppercase",
                     }}

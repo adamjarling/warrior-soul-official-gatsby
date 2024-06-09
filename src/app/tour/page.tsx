@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 export default function TourPage() {
   return (
     <main>
-      <PageTitleBanner pageTitle="Tour Dates" />
+      <PageTitleBanner pageTitle="On Tour!" />
       <Container>
         <Flex direction={"column"} align={"center"}>
           <video autoPlay loop muted playsInline>

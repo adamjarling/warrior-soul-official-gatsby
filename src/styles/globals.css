@@ -17,8 +17,8 @@
 }
 
 .radix-themes {
-  --default-font-family: var(--font-kdam);
-  --heading-font-family: var(--font-kdam);
+  --default-font-family: var(--font-raleway);
+  --heading-font-family: var(--font-raleway);
 }
 
 body {

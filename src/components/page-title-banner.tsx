@@ -1,12 +1,9 @@
 import { Box, Container, Flex, Heading, Section } from "@radix-ui/themes";
 
-import Image from "next/image";
-import logo from "/public/images/warrior-soul-logo-one-line.png";
-
 export default function PageTitleBanner({ pageTitle }: { pageTitle: string }) {
   return (
     <Container>
-      <Section size={"2"}>
+      <Section size={"3"}>
         <Flex
           className="relative"
           px={"8"}
@@ -23,9 +20,10 @@ export default function PageTitleBanner({ pageTitle }: { pageTitle: string }) {
           <Heading
             align="center"
             size={{
-              initial: "8",
+              initial: "9",
               sm: "9",
             }}
+            weight={"bold"}
             style={{
               textTransform: "uppercase",
               //textShadow: "-6px -8px 0px red",
