@@ -179,4 +179,120 @@ export const tourDates: Show[] = [
       ticket: "https://www.wegottickets.com/event/619274",
     },
   },
+  {
+    datetime: "2024-10-18T21:00:00",
+    notes: "",
+    venue: {
+      name: "Louie Louie Live",
+      city: "Estepona",
+      stateProvince: "",
+      country: "Spain",
+      url: {
+        facebook: "https://www.facebook.com/louielouierockbar",
+        website: "https://louielouierockbar.com/",
+      },
+    },
+    url: {
+      facebook: "",
+      image: "",
+      ticket: "",
+    },
+  },
+  {
+    datetime: "2024-10-19T22:00:00",
+    notes: "w/ The Black Halos",
+    venue: {
+      name: "La Guarida del Angel",
+      city: "Jerez",
+      stateProvince: "",
+      country: "Spain",
+      url: {
+        facebook: "",
+        website:
+          "https://laguaridadelangel.com/en/eventos/black-halos-warrior-soul/",
+      },
+    },
+    url: {
+      facebook: "",
+      image: "/images/poster_2024_10_19.jpg",
+      ticket: "https://mutick.com/e/entradas-warrior-soul-black-halos-jerez",
+    },
+  },
+  {
+    datetime: "2024-10-21T21:30:00",
+    notes: "",
+    venue: {
+      name: "Babylon",
+      city: "León",
+      stateProvince: "",
+      country: "Spain",
+      url: {
+        facebook: "https://www.facebook.com/Babylonleon",
+        website: "",
+      },
+    },
+    url: {
+      facebook: "",
+      image: "",
+      ticket: "",
+    },
+  },
+  {
+    datetime: "2024-10-22T21:00:00",
+    notes: "",
+    venue: {
+      name: "Sala Mardi Gras",
+      city: "A Caruña",
+      stateProvince: "",
+      country: "Spain",
+      url: {
+        facebook: "https://www.facebook.com/salamardigras/",
+        website: "https://www.salamardigras.com/",
+      },
+    },
+    url: {
+      facebook: "",
+      image: "",
+      ticket: "",
+    },
+  },
+  {
+    datetime: "2024-10-24T21:00:00",
+    notes: "",
+    venue: {
+      name: "Gruta 77",
+      city: "Madrid",
+      stateProvince: "",
+      country: "Spain",
+      url: {
+        facebook: "https://www.facebook.com/gruta77madrid/",
+        website: "https://gruta77.com/",
+      },
+    },
+    url: {
+      facebook: "",
+      image: "/images/poster_2024_10_24.jpg",
+      ticket:
+        "https://movingtickets.com/Entradas-Warrior-Soul-Los-Magnetics-concierto-en-Gruta77-Madrid/",
+    },
+  },
+  {
+    datetime: "2024-10-26T21:00:00",
+    notes: "Fon Rock Festival w/ Los Tiki Phantoms, The Lizards, Piedra",
+    venue: {
+      name: "Sala Canalla Live",
+      city: "Pamplona",
+      stateProvince: "",
+      country: "Spain",
+      url: {
+        facebook: "https://www.facebook.com/salacanalla",
+        website: "https://www.canalla.es/",
+      },
+    },
+    url: {
+      facebook: "https://www.facebook.com/events/470633208855870",
+      image: "/images/poster_2024_10_26.jpg",
+      ticket: "https://logiticket.com/artista/fonrock-2024--184",
+    },
+  },
 ];

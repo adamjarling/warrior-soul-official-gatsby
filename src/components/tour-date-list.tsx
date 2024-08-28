@@ -60,19 +60,31 @@ export default function TourDateList({ tourDates }: { tourDates: Show[] }) {
           >
             {show.venue.city}, - {show.venue.country}
           </Text>
-
-          <Box pt={"4"}>
-            <Button
-              asChild
-              size={"4"}
-              variant={"outline"}
-              className="uppercase font-semibold"
+          {show.notes && (
+            <Text
+              size={{
+                initial: "7",
+                md: "8",
+              }}
             >
-              <NextLink href={show.url.ticket} target="_blank">
-                Buy Tickets
-              </NextLink>
-            </Button>
-          </Box>
+              {show.notes}
+            </Text>
+          )}
+
+          {show.url.ticket && (
+            <Box pt={"4"}>
+              <Button
+                asChild
+                size={"4"}
+                variant={"outline"}
+                className="uppercase font-semibold"
+              >
+                <NextLink href={show.url.ticket} target="_blank">
+                  Buy Tickets
+                </NextLink>
+              </Button>
+            </Box>
+          )}
         </Flex>
       ))}
     </Grid>

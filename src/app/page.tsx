@@ -3,7 +3,6 @@ import {
   Button,
   Container,
   Flex,
-  Grid,
   Heading,
   Section,
   Text,
@@ -14,7 +13,11 @@ import Image from "next/image";
 import NextLink from "next/link";
 import TourDateList from "@/components/tour-date-list";
 import WButton from "@/components/button";
+import { getUpcomingTourDates } from "@/lib/tour-date-helpers";
 import { tourDates } from "@/app/tour/tourdates";
+
+const upcomingTourDates = getUpcomingTourDates(tourDates);
+console.log("🚀 ~ upcomingTourDates:", upcomingTourDates);
 
 export default function Home() {
   return (
@@ -39,12 +42,14 @@ export default function Home() {
             >
               Space Age Playboys
               <br />
-              UK Tour 2024
+              Spain Tour 2024
             </Heading>
-            <video autoPlay loop muted playsInline>
-              <source src="/video/sap-uk-vid-promo.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            <Image
+              src="/images/2024_spain_playboys.jpg"
+              width="960"
+              height="960"
+              alt="Space Age Playboys UK Tour 2024"
+            />
             <WButton>
               <NextLink href="/tour">View Full Schedule</NextLink>
             </WButton>
@@ -54,7 +59,7 @@ export default function Home() {
       <Section>
         <Container>
           <Flex direction={"column"} align={"center"} gapY={"6"}>
-            <TourDateList tourDates={tourDates.slice(0, 4)} />
+            <TourDateList tourDates={upcomingTourDates.slice(0, 4)} />
             <Box>
               <WButton>
                 <NextLink href="/tour">See all Tour Dates</NextLink>

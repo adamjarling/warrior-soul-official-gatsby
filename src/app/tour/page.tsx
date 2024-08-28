@@ -6,6 +6,10 @@ import {
   Section,
   Text,
 } from "@radix-ui/themes";
+import {
+  getPastTourDates,
+  getUpcomingTourDates,
+} from "@/lib/tour-date-helpers";
 
 import Image from "next/image";
 import { Metadata } from "next";
@@ -18,30 +22,53 @@ export const metadata: Metadata = {
   title: "Tour Dates",
 };
 
+const upcomingTourDates = getUpcomingTourDates(tourDates);
+const pastTourDates = getPastTourDates(tourDates);
+
 export default function TourPage() {
   return (
     <main>
       <PageTitleBanner pageTitle="On Tour!" />
-      <Container>
+      <>
+        <Container>
+          <Flex direction={"column"} align={"center"}>
+            <Image
+              src="/images/2024_spain_playboys.jpg"
+              width="960"
+              height="960"
+              alt="Space Age Playboys UK Tour 2024"
+            />
+          </Flex>
+        </Container>
+
+        <Section size={"3"}>
+          <Container>
+            <TourDateList tourDates={upcomingTourDates} />
+          </Container>
+        </Section>
+        <Section>
+          <Container>
+            <Flex direction={"column"} align={"center"}>
+              <Image
+                src="/images/sap-uk-2024-promo.jpeg"
+                width="808"
+                height="960"
+                alt="Space Age Playboys UK Tour 2024"
+              />
+            </Flex>
+          </Container>
+        </Section>
+        <Section size={"3"}>
+          <Container>
+            <TourDateList tourDates={pastTourDates} />
+          </Container>
+        </Section>
         <Flex direction={"column"} align={"center"}>
           <video autoPlay loop muted playsInline>
             <source src="/video/sap-uk-vid-promo.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </Flex>
-        <Section size={"3"}>
-          <Container>
-            <TourDateList tourDates={tourDates} />
-          </Container>
-        </Section>
-        <Section>
-          <Image
-            src="/images/sap-uk-2024-promo.jpeg"
-            width="808"
-            height="960"
-            alt="Space Age Playboys UK Tour 2024"
-          />
-        </Section>
         <Section size={"2"}>
           <Container>
             <Grid columns={"1"} gap={"4"} px={"5"}>
@@ -111,7 +138,7 @@ export default function TourPage() {
             </Grid>
           </Container>
         </Section>
-      </Container>
+      </>
     </main>
   );
 }
