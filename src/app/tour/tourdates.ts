@@ -180,6 +180,26 @@ export const tourDates: Show[] = [
     },
   },
   {
+    datetime: "2024-09-09T21:00:00",
+    notes: "",
+    venue: {
+      name: "Hard Rock Hell Sleaze",
+      city: "Leicester",
+      stateProvince: "",
+      country: "England",
+      url: {
+        facebook: "",
+        website: "https://hrhsleaze.com/",
+      },
+    },
+    url: {
+      facebook: "",
+      image: "",
+      ticket:
+        "https://hrhsleaze.com/product-category/sleaze-7/ticket-and-extras/",
+    },
+  },
+  {
     datetime: "2024-10-18T21:00:00",
     notes: "",
     venue: {
@@ -293,6 +313,26 @@ export const tourDates: Show[] = [
       facebook: "https://www.facebook.com/events/470633208855870",
       image: "/images/poster_2024_10_26.jpg",
       ticket: "https://logiticket.com/artista/fonrock-2024--184",
+    },
+  },
+  {
+    datetime: "2025-09-07T21:00:00",
+    notes: "",
+    venue: {
+      name: "Hard Rock Hell Sleaze VIII",
+      city: "Leicester",
+      stateProvince: "",
+      country: "England",
+      url: {
+        facebook: "",
+        website: "https://hrhsleaze.com/",
+      },
+    },
+    url: {
+      facebook: "",
+      image: "",
+      ticket:
+        "https://hrhsleaze.com/product-category/sleaze-8/tickets-and-extras-sleaze-8/",
     },
   },
 ];
