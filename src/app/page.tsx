@@ -25,33 +25,7 @@ export default function Home() {
       <Section size={"1"}>
         <BannerImage />
       </Section>
-      <Section size={"2"}>
-        <Container>
-          <Flex direction={"column"} align={"center"} gapY={"7"}>
-            <Heading
-              as="h2"
-              align="center"
-              size={{
-                initial: "9",
-                sm: "9",
-              }}
-              weight={"bold"}
-              style={{
-                textTransform: "uppercase",
-              }}
-            >
-              Warrior Soul Headlines Hard Rock Hell Sleaze VII September 9th,
-              2024
-            </Heading>
-            <Image
-              src="/images/poster_2024_09_09.jpg"
-              width="696"
-              height="960"
-              alt="Hard Rock Hell Sleaze 7"
-            />
-          </Flex>
-        </Container>
-      </Section>
+
       <Section size={"2"}>
         <Container>
           <Flex direction={"column"} align={"center"} gapY={"7"}>
@@ -92,6 +66,33 @@ export default function Home() {
                 <NextLink href="/tour">See all Tour Dates</NextLink>
               </WButton>
             </Box>
+          </Flex>
+        </Container>
+      </Section>
+      <Section size={"2"}>
+        <Container>
+          <Flex direction={"column"} align={"center"} gapY={"7"}>
+            <Heading
+              as="h2"
+              align="center"
+              size={{
+                initial: "9",
+                sm: "9",
+              }}
+              weight={"bold"}
+              style={{
+                textTransform: "uppercase",
+              }}
+            >
+              Warrior Soul Headlines Hard Rock Hell Sleaze VII September 9th,
+              2024
+            </Heading>
+            <Image
+              src="/images/poster_2024_09_09.jpg"
+              width="696"
+              height="960"
+              alt="Hard Rock Hell Sleaze 7"
+            />
           </Flex>
         </Container>
       </Section>

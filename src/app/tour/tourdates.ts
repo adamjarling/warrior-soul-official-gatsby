@@ -215,7 +215,8 @@ export const tourDates: Show[] = [
     url: {
       facebook: "",
       image: "",
-      ticket: "",
+      ticket:
+        "https://www.woutick.es/evento/58261/entradas-warrior-soul?busqueda=warrior&place=916&date=18-10-2024&time=23:00&showId=78093",
     },
   },
   {
@@ -254,7 +255,8 @@ export const tourDates: Show[] = [
     url: {
       facebook: "",
       image: "",
-      ticket: "",
+      ticket:
+        "https://www.woutick.es/evento/57996/entradas-warrior-soul-en-leon-babylon",
     },
   },
   {
@@ -273,7 +275,8 @@ export const tourDates: Show[] = [
     url: {
       facebook: "",
       image: "",
-      ticket: "",
+      ticket:
+        "https://www.masqueticket.com/entradas/warrior-soul-a-coruna-2024-tickets",
     },
   },
   {
