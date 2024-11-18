@@ -9,6 +9,7 @@ import {
 import {
   getPastTourDates,
   getUpcomingTourDates,
+  sortTourDates,
 } from "@/lib/tour-date-helpers";
 
 import Image from "next/image";
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
 };
 
 const upcomingTourDates = getUpcomingTourDates(tourDates);
-const pastTourDates = getPastTourDates(tourDates);
+const pastTourDates = sortTourDates(getPastTourDates(tourDates), true);
 
 export default function TourPage() {
   return (
@@ -33,10 +34,10 @@ export default function TourPage() {
         <Container>
           <Flex direction={"column"} align={"center"}>
             <Image
-              src="/images/2024_spain_playboys.jpg"
+              src="/images/poster_2024_usa.jpg"
               width="960"
               height="960"
-              alt="Space Age Playboys UK Tour 2024"
+              alt="Space Age Playboys USA Tour 2024"
             />
           </Flex>
         </Container>
@@ -44,6 +45,18 @@ export default function TourPage() {
         <Section size={"3"}>
           <Container>
             <TourDateList tourDates={upcomingTourDates} />
+          </Container>
+        </Section>
+        <Section>
+          <Container>
+            <Flex direction={"column"} align={"center"}>
+              <Image
+                src="/images/2024_spain_playboys.jpg"
+                width="960"
+                height="960"
+                alt="Space Age Playboys UK Tour 2024"
+              />
+            </Flex>
           </Container>
         </Section>
         <Section>

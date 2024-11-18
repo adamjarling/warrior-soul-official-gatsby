@@ -319,6 +319,82 @@ export const tourDates: Show[] = [
     },
   },
   {
+    datetime: "2024-12-05T21:00:00",
+    notes: "",
+    venue: {
+      name: "The Cellar",
+      city: "Hamden",
+      stateProvince: "CT",
+      country: "USA",
+      url: {
+        facebook: "",
+        website: "",
+      },
+    },
+    url: {
+      facebook: "",
+      image: "",
+      ticket: "",
+    },
+  },
+  {
+    datetime: "2024-12-06T21:00:00",
+    notes: "",
+    venue: {
+      name: "Koto",
+      city: "Salem",
+      stateProvince: "MA",
+      country: "USA",
+      url: {
+        facebook: "",
+        website: "",
+      },
+    },
+    url: {
+      facebook: "",
+      image: "",
+      ticket: "",
+    },
+  },
+  {
+    datetime: "2024-12-07T21:00:00",
+    notes: "",
+    venue: {
+      name: "The Wood Shop",
+      city: "Brooklyn",
+      stateProvince: "NY",
+      country: "USA",
+      url: {
+        facebook: "",
+        website: "",
+      },
+    },
+    url: {
+      facebook: "",
+      image: "",
+      ticket: "",
+    },
+  },
+  {
+    datetime: "2024-12-08T21:00:00",
+    notes: "",
+    venue: {
+      name: "Dingbats",
+      city: "Clifton",
+      stateProvince: "NJ",
+      country: "USA",
+      url: {
+        facebook: "",
+        website: "",
+      },
+    },
+    url: {
+      facebook: "",
+      image: "",
+      ticket: "",
+    },
+  },
+  {
     datetime: "2025-09-07T21:00:00",
     notes: "",
     venue: {

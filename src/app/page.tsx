@@ -17,7 +17,6 @@ import { getUpcomingTourDates } from "@/lib/tour-date-helpers";
 import { tourDates } from "@/app/tour/tourdates";
 
 const upcomingTourDates = getUpcomingTourDates(tourDates);
-console.log("🚀 ~ upcomingTourDates:", upcomingTourDates);
 
 export default function Home() {
   return (
@@ -43,13 +42,13 @@ export default function Home() {
             >
               Space Age Playboys
               <br />
-              Spain Tour 2024
+              USA Tour 2024
             </Heading>
             <Image
-              src="/images/2024_spain_playboys.jpg"
+              src="/images/poster_2024_usa.jpg"
               width="960"
               height="960"
-              alt="Space Age Playboys UK Tour 2024"
+              alt="Space Age Playboys USA Tour 2024"
             />
             <WButton>
               <NextLink href="/tour">View Full Schedule</NextLink>
