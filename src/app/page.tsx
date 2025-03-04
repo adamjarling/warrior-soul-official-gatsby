@@ -43,7 +43,7 @@ export default function Home() {
               Italy Rocks ⚡️ Tour 2025
             </Heading>
             <Image
-              src="/images/poster_2025_italy.jpg"
+              src="/images/poster_2025_italy_v2.jpg"
               width="960"
               height="960"
               alt="Warrior Soul Italy Tour 2025"

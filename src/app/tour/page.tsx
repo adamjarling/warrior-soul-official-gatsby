@@ -34,7 +34,7 @@ export default function TourPage() {
         <Container>
           <Flex direction={"column"} align={"center"}>
             <Image
-              src="/images/poster_2025_italy.jpg"
+              src="/images/poster_2025_italy_v2.jpg"
               width="960"
               height="960"
               alt="Italy Rocks 2025"

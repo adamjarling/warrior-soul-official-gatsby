@@ -493,17 +493,17 @@ export const tourDates: Show[] = [
     datetime: "2025-03-27T21:00:00",
     notes: "Padova",
     venue: {
-      name: "TBA",
+      name: "Grind House Club",
       city: "Padova",
       stateProvince: "",
       country: "Italy",
       url: {
-        facebook: "",
-        website: "",
+        facebook: "https://www.facebook.com/GrindHouseClub",
+        website: "https://grindhouse.club/",
       },
     },
     url: {
-      facebook: "",
+      facebook: "https://www.facebook.com/events/621452030488938",
       image: "",
       ticket: "",
     },
@@ -531,17 +531,17 @@ export const tourDates: Show[] = [
     datetime: "2025-03-29T21:00:00",
     notes: "Milano",
     venue: {
-      name: "TBA",
+      name: "Rock'n'Roll Club",
       city: "Milano",
       stateProvince: "",
       country: "Italy",
       url: {
-        facebook: "",
-        website: "",
+        facebook: "https://www.facebook.com/RocknrollClubRho",
+        website: "https://www.rocknrollrho.it/",
       },
     },
     url: {
-      facebook: "",
+      facebook: "https://www.facebook.com/events/1157276535749086/",
       image: "",
       ticket: "",
     },
