@@ -395,6 +395,158 @@ export const tourDates: Show[] = [
     },
   },
   {
+    datetime: "2025-03-20T21:00:00",
+    notes: "MUSIC FACTORY - Cremona",
+    venue: {
+      name: "MUSIC FACTORY",
+      city: "Cremona",
+      stateProvince: "",
+      country: "Italy",
+      url: {
+        facebook: "https://www.facebook.com/events/1652098592063567",
+        website: "",
+      },
+    },
+    url: {
+      facebook: "https://www.facebook.com/events/1652098592063567",
+      image: "",
+      ticket: "",
+    },
+  },
+  {
+    datetime: "2025-03-21T21:00:00",
+    notes: "MONSTERS A-LIVE - Lawn",
+    venue: {
+      name: "MONSTERS A-LIVE",
+      city: "Lawn",
+      stateProvince: "",
+      country: "Italy",
+      url: {
+        facebook: "https://www.facebook.com/events/591930723643440",
+        website: "",
+      },
+    },
+    url: {
+      facebook: "https://www.facebook.com/events/591930723643440",
+      image: "",
+      ticket: "",
+    },
+  },
+  {
+    datetime: "2025-03-22T21:00:00",
+    notes: "METROPOLIS LIVE CLUB – Piedimonte San Germano (FR)",
+    venue: {
+      name: "METROPOLIS LIVE CLUB",
+      city: "Piedimonte San Germano",
+      stateProvince: "FR",
+      country: "Italy",
+      url: {
+        facebook: "https://www.facebook.com/events/564519203263272",
+        website: "",
+      },
+    },
+    url: {
+      facebook: "https://www.facebook.com/events/564519203263272",
+      image: "",
+      ticket: "",
+    },
+  },
+  {
+    datetime: "2025-03-23T21:00:00",
+    notes: "MIDNIGHT LIVE - Matera",
+    venue: {
+      name: "MIDNIGHT LIVE",
+      city: "Matera",
+      stateProvince: "",
+      country: "Italy",
+      url: {
+        facebook: "https://www.facebook.com/events/1126407985456540",
+        website: "",
+      },
+    },
+    url: {
+      facebook: "https://www.facebook.com/events/1126407985456540",
+      image: "",
+      ticket: "",
+    },
+  },
+  {
+    datetime: "2025-03-25T20:00:00",
+    notes: "Escape Metal Bar",
+    venue: {
+      name: "Escape Metal Bar",
+      city: "Vienna",
+      stateProvince: "",
+      country: "Austria",
+      url: {
+        facebook: "https://www.escape-metalcorner.at/",
+        website: "",
+      },
+    },
+    url: {
+      facebook: "https://www.facebook.com/events/1041658837723512",
+      image: "",
+      ticket: "https://www.ticketmaster.at/event/1372044836",
+    },
+  },
+  {
+    datetime: "2025-03-27T21:00:00",
+    notes: "Padova",
+    venue: {
+      name: "TBA",
+      city: "Padova",
+      stateProvince: "",
+      country: "Italy",
+      url: {
+        facebook: "",
+        website: "",
+      },
+    },
+    url: {
+      facebook: "",
+      image: "",
+      ticket: "",
+    },
+  },
+  {
+    datetime: "2025-03-28T21:00:00",
+    notes: "Brescia",
+    venue: {
+      name: "TBA",
+      city: "Brescia",
+      stateProvince: "",
+      country: "Italy",
+      url: {
+        facebook: "",
+        website: "",
+      },
+    },
+    url: {
+      facebook: "",
+      image: "",
+      ticket: "",
+    },
+  },
+  {
+    datetime: "2025-03-29T21:00:00",
+    notes: "Milano",
+    venue: {
+      name: "TBA",
+      city: "Milano",
+      stateProvince: "",
+      country: "Italy",
+      url: {
+        facebook: "",
+        website: "",
+      },
+    },
+    url: {
+      facebook: "",
+      image: "",
+      ticket: "",
+    },
+  },
+  {
     datetime: "2025-09-07T21:00:00",
     notes: "",
     venue: {

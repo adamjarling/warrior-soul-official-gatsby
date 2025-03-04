@@ -40,15 +40,13 @@ export default function Home() {
                 textTransform: "uppercase",
               }}
             >
-              Space Age Playboys
-              <br />
-              USA Tour 2024
+              Italy Rocks ⚡️ Tour 2025
             </Heading>
             <Image
-              src="/images/poster_2024_usa.jpg"
+              src="/images/poster_2025_italy.jpg"
               width="960"
               height="960"
-              alt="Space Age Playboys USA Tour 2024"
+              alt="Warrior Soul Italy Tour 2025"
             />
             <WButton>
               <NextLink href="/tour">View Full Schedule</NextLink>

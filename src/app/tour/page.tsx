@@ -34,10 +34,10 @@ export default function TourPage() {
         <Container>
           <Flex direction={"column"} align={"center"}>
             <Image
-              src="/images/poster_2024_usa.jpg"
+              src="/images/poster_2025_italy.jpg"
               width="960"
               height="960"
-              alt="Space Age Playboys USA Tour 2024"
+              alt="Italy Rocks 2025"
             />
           </Flex>
         </Container>
